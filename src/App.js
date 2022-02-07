@@ -1,5 +1,3 @@
-import ButtonComponent from "./components/Button/Button";
-
 function App() {
   return (
     <>
