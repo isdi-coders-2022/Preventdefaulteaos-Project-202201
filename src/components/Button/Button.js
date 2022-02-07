@@ -1,16 +1,13 @@
+import { ButtonWood } from "../../jsStyles/buttonStyles";
+
 const ButtonComponent = ({ className, actionOnClick, text, type }) => {
   return (
     <>
-      {/* {type === "green" && (
-        <ButtonGreen className={className} onClick={actionOnClick}>
+      {type === "wood" && (
+        <ButtonWood className={className} onClick={actionOnClick}>
           {text}
-        </ButtonGreen>
+        </ButtonWood>
       )}
-      {type === "red" && (
-        <ButtonRed className={className} onClick={actionOnClick}>
-          {text}
-        </ButtonRed>
-      )} */}
     </>
   );
 };
