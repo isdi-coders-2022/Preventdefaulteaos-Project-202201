@@ -18,9 +18,9 @@ export const SearchBarContainer = styled.div`
       
     }
     & input{
-     border: 0px;
-     border-left: 4px solid #2C514C;
-     outline: none;
-     border: specify yours;
+      border: 0px;
+      border-left: 4px solid #2C514C;
+      outline: none;
+      border: specify yours;
     }
 `;
