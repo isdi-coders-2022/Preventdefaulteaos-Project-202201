@@ -1,5 +1,11 @@
+import ButtonComponent from "./components/Button/Button";
+
 function App() {
-  return <p></p>;
+  return (
+    <>
+      <ButtonComponent type="wood" text="uwu" />
+    </>
+  );
 }
 
 export default App;
