@@ -11,7 +11,7 @@ export const SearchBarContainer = styled.div`
     color: gray;  
     align-items: center;
     justify-content: center;
-     border: 4px solid #2C514C;
+    border: 4px solid #2C514C;
      
     & .icon{
       padding-right: 10px;
