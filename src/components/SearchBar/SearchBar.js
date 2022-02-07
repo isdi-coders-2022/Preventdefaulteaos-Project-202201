@@ -1,13 +1,14 @@
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SearchBarContainer } from "../../jsStyles/SearchBarStyle";
 
 const SearchBar = () => {
   return (
     <>
-      <div>
-        <FontAwesomeIcon icon={faSearch} />
+      <SearchBarContainer className="searchBarContainer">
+        <FontAwesomeIcon icon={faSearch} className="icon" />
         <input type="text" placeholder="NAME, SETS, TYPES" />
-      </div>
+      </SearchBarContainer>
     </>
   );
 };
