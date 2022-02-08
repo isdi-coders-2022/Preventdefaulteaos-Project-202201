@@ -52,8 +52,8 @@
       "!src/reportWebVitals.js",
       "!src/setupTests.js",
       "!src/index.js",
-      "!src/App.js",
-      "!src/**/contexts"
+      "!src/data/fakedata.js",
+      "!src/jsStyles/*"
     ]
   }
 }
