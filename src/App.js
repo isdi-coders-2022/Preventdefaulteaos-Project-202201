@@ -1,6 +1,6 @@
 import PackOpenerCardList from "./components/PackOpenerCardList/PackOpenerCardList";
-import Button from "./components/Button/Button";
 import SearchBar from "./components/SearchBar/SearchBar";
+import HeaderComponent from "./components/Header/Header";
 import fakeArrayOfCards from "./data/fakedata";
 import SearchButtonsContainer from "./components/SearchButtonContainer/SearchButtonContainer";
 
@@ -8,7 +8,8 @@ function App() {
   const BoosterPackAPI = fakeArrayOfCards;
   return (
     <>
-      <Button type="wood" text="uwu" />
+      <HeaderComponent />
+      <PackOpenerCardList />
       <SearchBar />
       <SearchButtonsContainer />
       <PackOpenerCardList fakeArrayOfCards={BoosterPackAPI} />
