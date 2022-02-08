@@ -12,4 +12,5 @@ export const SearchButtonContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(196, 196, 196, 0.8);
 `;
