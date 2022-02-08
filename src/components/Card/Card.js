@@ -1,9 +1,10 @@
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
+import CardComponent from "../../jsStyles/CardStyles";
 
 const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
   return (
-    <div className="card">
+    <CardComponent className="card">
       <img src={imageUrl} alt={`${name} card`}></img>
       <section>
         <h3 className="card--name">{name}</h3>
@@ -13,7 +14,7 @@ const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
         <Button type="onCard" text="MORE INFO" />
         <Button type="onCard" text="ADD TO DECK" />
       </section>
-    </div>
+    </CardComponent>
   );
 };
 
