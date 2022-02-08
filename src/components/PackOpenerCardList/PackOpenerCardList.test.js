@@ -20,7 +20,7 @@ describe("Given a PackOpenerCardList component", () => {
         },
       ];
 
-      render(<PackOpenerCardList fakeArrayOfCards={fakeArrayOfCards} />);
+      render(<PackOpenerCardList arrayOfCards={fakeArrayOfCards} />);
 
       const expectedImage = screen.getAllByRole("img").length;
 
