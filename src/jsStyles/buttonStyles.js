@@ -29,6 +29,8 @@ export const ButtonOnCard = styled(ButtonGeneric)`
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   color: #ffffff;
+  height: 35px;
+  font-size: 15px;
 `;
 
 export const ButtonFilter = styled(ButtonGeneric)`
