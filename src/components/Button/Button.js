@@ -5,7 +5,7 @@ import {
   ButtonWood,
 } from "../../jsStyles/buttonStyles";
 
-const ButtonComponent = ({ className, actionOnClick, text, type }) => {
+const Button = ({ className, actionOnClick, text, type }) => {
   return (
     <>
       {type === "wood" && (
@@ -31,4 +31,4 @@ const ButtonComponent = ({ className, actionOnClick, text, type }) => {
     </>
   );
 };
-export default ButtonComponent;
+export default Button;

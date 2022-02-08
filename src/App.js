@@ -1,15 +1,15 @@
-import ButtonComponent from "./components/Button/Button";
+import Button from "./components/Button/Button";
 import SearchBar from "./components/SearchBar/SearchBar";
 
 function App() {
   return (
     <>
-    <ButtonComponent type="wood" text="uwu" />
+      <Button type="wood" text="uwu" />
       <SearchBar />
-      {/* <ButtonComponent type="onCard" text="More Info" />
-      <ButtonComponent type="filter" text="Kamigawa" />
-      <ButtonComponent type="wood" text="MAKE YOUR CARD" />
-      <ButtonComponent type="create" text="CREATE!" /> */}
+      {/* <Button type="onCard" text="More Info" />
+      <Button type="filter" text="Kamigawa" />
+      <Button type="wood" text="MAKE YOUR CARD" />
+      <Button type="create" text="CREATE!" /> */}
     </>
   );
 }
