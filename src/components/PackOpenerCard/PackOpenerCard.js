@@ -4,7 +4,6 @@ const CardImage = styled.img`
   height: 160px;
   width: 120px;
   border: 1px solid black;
-  gap: 20px;
 `;
 
 const PackOpenerCard = ({ card }) => {
