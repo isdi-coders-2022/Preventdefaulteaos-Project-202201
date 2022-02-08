@@ -4,6 +4,7 @@ import {
   ButtonOnCard,
   ButtonWood,
 } from "../../jsStyles/buttonStyles";
+import PropTypes from "prop-types";
 
 const Button = ({ className, actionOnClick, text, type }) => {
   return (
@@ -31,4 +32,12 @@ const Button = ({ className, actionOnClick, text, type }) => {
     </>
   );
 };
+
+Button.propTypes = {
+  className: PropTypes.string,
+  actionOnClick: PropTypes.func,
+  text: PropTypes.string,
+  type: PropTypes.string,
+};
+
 export default Button;
