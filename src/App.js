@@ -1,6 +1,5 @@
-import PackOpenerCardList from "./components/PackOpenerCardList/PackOpenerCardList";
 import HeaderComponent from "./components/Header/Header";
-import fakeArrayOfCards from "./data/fakedata";
+import PackOpenerContainer from "./components/PackOpenerContainer/PackOpenerContainer";
 import SearchContainer from "./components/SearchContainer/SearchContainer";
 import Card from "./components/Card/Card";
 
@@ -63,6 +62,7 @@ function App() {
       <SearchContainer />
       <PackOpenerCardList arrayOfCards={boosterPackAPI} />
       <Card card={cardExample} />
+      <PackOpenerContainer />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
       <Button type="wood" text="MAKE YOUR CARD" />
