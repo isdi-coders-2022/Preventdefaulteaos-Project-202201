@@ -1,6 +1,7 @@
 import HeaderComponent from "./components/Header/Header";
-import SearchContainer from "./components/SearchContainer/SearchContainer";
 import Card from "./components/Card/Card";
+import SearchContainer from "./components/SearchContainer/SearchContainer";
+import PackOpenerContainer from "./components/PackOpenerContainer/PackOpenerContainer";
 
 function App() {
   const cardExample = {
@@ -59,6 +60,7 @@ function App() {
       <HeaderComponent />
       <SearchContainer />
       <Card card={cardExample} />
+      <PackOpenerContainer />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
       <Button type="wood" text="MAKE YOUR CARD" />
