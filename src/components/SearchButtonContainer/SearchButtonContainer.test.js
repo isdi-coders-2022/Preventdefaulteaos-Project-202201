@@ -1,16 +1,14 @@
 import { render, screen } from "@testing-library/react";
 import SearchButtonsContainer from "./SearchButtonContainer";
 
-describe("Given a Button component", () => {
-  describe("When button text is 'Kamigawa'", () => {
-    test("Then it should not render a button", () => {
-      const ButtonText = "Kamigawa";
-
+describe("Given a SearchButtonsContainer component", () => {
+  describe("When it render a SearchButtonsContainer", () => {
+    test("Then it should render a button", () => {
       render(<SearchButtonsContainer />);
 
-      const buttonRender = screen.getByText(ButtonText);
+      const items = screen.getAllByRole("button");
 
-      expect(buttonRender).toBeInTheDocument();
+      expect(items).toHaveLength(3);
     });
   });
 });
