@@ -12,6 +12,7 @@ function App() {
     <>
       <HeaderComponent />
 
+
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePage />} />
@@ -20,6 +21,7 @@ function App() {
         <Route path="/createcard" element={<CreateCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
     </>
   );
 }
