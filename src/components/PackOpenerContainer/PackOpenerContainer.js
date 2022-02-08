@@ -1,10 +1,16 @@
 import fakeArrayOfCards from "../../data/fakedata";
+import Button from "../Button/Button";
 import PackOpenerCardList from "../PackOpenerCardList/PackOpenerCardList";
 
 const PackOpenerContainer = () => {
   const boosterPackAPI = fakeArrayOfCards;
 
-  return <PackOpenerCardList arrayOfCards={boosterPackAPI} />;
+  return (
+    <>
+      <Button type="create" text="OPEN PACK!" />
+      <PackOpenerCardList arrayOfCards={boosterPackAPI} />;
+    </>
+  );
 };
 
 export default PackOpenerContainer;
