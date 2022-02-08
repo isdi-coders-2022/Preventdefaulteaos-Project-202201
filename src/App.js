@@ -1,11 +1,8 @@
-import PackOpenerCardList from "./components/PackOpenerCardList/PackOpenerCardList";
 import HeaderComponent from "./components/Header/Header";
-import fakeArrayOfCards from "./data/fakedata";
 import SearchContainer from "./components/SearchContainer/SearchContainer";
 import Card from "./components/Card/Card";
 
 function App() {
-  const boosterPackAPI = fakeArrayOfCards;
   const cardExample = {
     name: "Overtaker",
     manaCost: "{1}{U}",
@@ -61,7 +58,6 @@ function App() {
     <>
       <HeaderComponent />
       <SearchContainer />
-      <PackOpenerCardList arrayOfCards={boosterPackAPI} />
       <Card card={cardExample} />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
