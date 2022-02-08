@@ -20,7 +20,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "97051",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
     printings: ["MMQ", "PMMQ", "PRM"],
     originalText:
       "o3oU, ocT, Discard a card from your hand: Untap target creature and gain control of it until end of turn. That creature gains haste until end of turn. (It may attack and ocT the turn it comes under your control.)",
@@ -68,7 +68,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386657",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386657&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386657&type=card",
     rulings: [
       {
         date: "2014-09-20",
@@ -83,7 +83,7 @@ const fakeArrayOfCards = [
         flavor:
           "Rakshasas handeln mit Geheimnissen und häufen durch deren wohlbedachte Preisgabe Reichtum an.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387464&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387464&type=card",
         language: "German",
         multiverseid: 387464,
       },
@@ -94,7 +94,7 @@ const fakeArrayOfCards = [
         flavor:
           "Los ráksasa comercian con secretos y amasan riquezas revelándolos con cautela.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389347&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389347&type=card",
         language: "Spanish",
         multiverseid: 389347,
       },
@@ -105,7 +105,7 @@ const fakeArrayOfCards = [
         flavor:
           "Les rakshasas vendent des secrets, amassant des fortunes grâce à leurs précieuses révélations.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387733&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387733&type=card",
         language: "French",
         multiverseid: 387733,
       },
@@ -116,7 +116,7 @@ const fakeArrayOfCards = [
         flavor:
           "I Rakshasa commerciano segreti e accumulano ricchezze rivelandoli con maestria.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388002&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388002&type=card",
         language: "Italian",
         multiverseid: 388002,
       },
@@ -127,7 +127,7 @@ const fakeArrayOfCards = [
         flavor:
           "ラクシャーサは秘密を取引し、その慎重な開示によって富を蓄財している。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388271&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388271&type=card",
         language: "Japanese",
         multiverseid: 388271,
       },
@@ -138,7 +138,7 @@ const fakeArrayOfCards = [
         flavor:
           "락샤사는 비밀 거래를 통해 조심스럽게 진실을 폭로하여 부를 축적한다.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388540&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388540&type=card",
         language: "Korean",
         multiverseid: 388540,
       },
@@ -149,7 +149,7 @@ const fakeArrayOfCards = [
         flavor:
           "Os Rakshasa negociam segredos, acumulando riquezas com revelações cuidadosas.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388809&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388809&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388809,
       },
@@ -160,7 +160,7 @@ const fakeArrayOfCards = [
         flavor:
           "Ракшасы торгуют секретами и получают огромную прибыль, раскрывая их в нужный момент.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389078&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389078&type=card",
         language: "Russian",
         multiverseid: 389078,
       },
@@ -170,7 +170,7 @@ const fakeArrayOfCards = [
         type: "结界",
         flavor: "罗刹出卖秘密，依靠他们小心揭露的内情来积聚财富。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386926&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386926&type=card",
         language: "Chinese Simplified",
         multiverseid: 386926,
       },
@@ -180,7 +180,7 @@ const fakeArrayOfCards = [
         type: "結界",
         flavor: "羅剎出賣秘密，依靠他們小心揭露的內情來積聚財富。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387195&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387195&type=card",
         language: "Chinese Traditional",
         multiverseid: 387195,
       },
@@ -241,7 +241,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386602",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386602&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386602&type=card",
     watermark: "sultai",
     rulings: [
       {
@@ -268,7 +268,7 @@ const fakeArrayOfCards = [
         type: "Kreatur — Schildkröte",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387409&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387409&type=card",
         language: "German",
         multiverseid: 387409,
       },
@@ -278,7 +278,7 @@ const fakeArrayOfCards = [
         type: "Criatura — Tortuga",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389292&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389292&type=card",
         language: "Spanish",
         multiverseid: 389292,
       },
@@ -288,7 +288,7 @@ const fakeArrayOfCards = [
         type: "Créature : tortue terrestre",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387678&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387678&type=card",
         language: "French",
         multiverseid: 387678,
       },
@@ -298,7 +298,7 @@ const fakeArrayOfCards = [
         type: "Creatura — Tartaruga",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387947&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387947&type=card",
         language: "Italian",
         multiverseid: 387947,
       },
@@ -308,7 +308,7 @@ const fakeArrayOfCards = [
         type: "クリーチャー — 海亀",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388216&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388216&type=card",
         language: "Japanese",
         multiverseid: 388216,
       },
@@ -318,7 +318,7 @@ const fakeArrayOfCards = [
         type: "생물 — 거북이",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388485&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388485&type=card",
         language: "Korean",
         multiverseid: 388485,
       },
@@ -328,7 +328,7 @@ const fakeArrayOfCards = [
         type: "Criatura — Tartaruga",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388754&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388754&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388754,
       },
@@ -338,7 +338,7 @@ const fakeArrayOfCards = [
         type: "Существо — Черепаха",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389023&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389023&type=card",
         language: "Russian",
         multiverseid: 389023,
       },
@@ -348,7 +348,7 @@ const fakeArrayOfCards = [
         type: "生物～龟",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386871&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386871&type=card",
         language: "Chinese Simplified",
         multiverseid: 386871,
       },
@@ -358,7 +358,7 @@ const fakeArrayOfCards = [
         type: "生物～龜",
         flavor: null,
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387140&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387140&type=card",
         language: "Chinese Traditional",
         multiverseid: 387140,
       },
@@ -417,7 +417,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386551",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
     rulings: [
       {
         date: "2019-07-12",
@@ -436,7 +436,7 @@ const fakeArrayOfCards = [
         flavor:
           "Die besten Bögen der Mardu, ersonnen von einem Meisterhandwerker alter Zeit, sind aus Drachenknochen gefertigt und mit dem Wind selbst bespannt.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387358&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387358&type=card",
         language: "German",
         multiverseid: 387358,
       },
@@ -447,7 +447,7 @@ const fakeArrayOfCards = [
         flavor:
           "Diseñados por un antiguo artífice, los mejores arcos mardu están tallados en hueso de dragón y tensados con el propio viento.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389241&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389241&type=card",
         language: "Spanish",
         multiverseid: 389241,
       },
@@ -458,7 +458,7 @@ const fakeArrayOfCards = [
         flavor:
           "Conçus par un ancien artificier, les meilleurs arcs marduens sont taillés dans l'os de dragon, avec le vent en guise de corde.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387627&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387627&type=card",
         language: "French",
         multiverseid: 387627,
       },
@@ -469,7 +469,7 @@ const fakeArrayOfCards = [
         flavor:
           "Progettati da un antico artefice, i migliori archi dei Mardu sono intagliati nelle ossa di drago e incordati con il vento stesso.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387896&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387896&type=card",
         language: "Italian",
         multiverseid: 387896,
       },
@@ -480,7 +480,7 @@ const fakeArrayOfCards = [
         flavor:
           "太古の工匠によってデザインされた最高のマルドゥの弓は竜骨から切り出され、風そのものを弦としている。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388165&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388165&type=card",
         language: "Japanese",
         multiverseid: 388165,
       },
@@ -491,7 +491,7 @@ const fakeArrayOfCards = [
         flavor:
           "고대의 기능공이 설계한 마르두 최고의 활들은 용의 뼈를 깎아 만든 활대에 바람 그 자체를 걸어 활시위로 삼았다.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388434&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388434&type=card",
         language: "Korean",
         multiverseid: 388434,
       },
@@ -502,7 +502,7 @@ const fakeArrayOfCards = [
         flavor:
           "Criados por um artífice ancestral, os melhores arcos dos Mardu são esculpidos em osso de dragão e cordeados com o próprio vento.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388703&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388703&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388703,
       },
@@ -513,7 +513,7 @@ const fakeArrayOfCards = [
         flavor:
           "Лучшие луки марду, которые изобрел древний механик, вырезаны из драконьей кости, а тетивой им служит сам ветер.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388972&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388972&type=card",
         language: "Russian",
         multiverseid: 388972,
       },
@@ -523,7 +523,7 @@ const fakeArrayOfCards = [
         type: "神器～武具",
         flavor: "最好的玛尔都弓出自先人工匠之手，以龙骨雕身，借风作弦。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386820&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386820&type=card",
         language: "Chinese Simplified",
         multiverseid: 386820,
       },
@@ -533,7 +533,7 @@ const fakeArrayOfCards = [
         type: "神器～武具",
         flavor: "最好的瑪爾都弓出自先人工匠之手，以龍骨雕身，借風作弦。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387089&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387089&type=card",
         language: "Chinese Traditional",
         multiverseid: 387089,
       },
@@ -613,7 +613,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386517",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386517&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386517&type=card",
     foreignNames: [
       {
         name: "Verachten",
@@ -622,7 +622,7 @@ const fakeArrayOfCards = [
         flavor:
           '„Du bist aus dem Feuer zurückgekehrt, Verräter. Diesmal wirst du diesen Ort als Asche verlassen." —Zurgo zu Sarkhan Vol',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387324&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387324&type=card",
         language: "German",
         multiverseid: 387324,
       },
@@ -633,7 +633,7 @@ const fakeArrayOfCards = [
         flavor:
           '"Has regresado del fuego, traidor. Esta vez te veré partir hecho cenizas". —Zurgo, a Sarkhan Vol',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389207&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389207&type=card",
         language: "Spanish",
         multiverseid: 389207,
       },
@@ -644,7 +644,7 @@ const fakeArrayOfCards = [
         flavor:
           "« Traître, le feu ne t'a pas consumé. Cette fois, je vais m'assurer que tu ne laisses que des cendres. » —Zurgo, à Sarkhan Vol",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387593&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387593&type=card",
         language: "French",
         multiverseid: 387593,
       },
@@ -655,7 +655,7 @@ const fakeArrayOfCards = [
         flavor:
           '"Hai fatto ritorno dal fuoco, traditore. Stavolta mi assicurerò che ad andarsene siano le tue ceneri." —Zurgo, a Sarkhan Vol',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387862&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387862&type=card",
         language: "Italian",
         multiverseid: 387862,
       },
@@ -666,7 +666,7 @@ const fakeArrayOfCards = [
         flavor:
           "「炎から再び戻ったか、裏切り者よ。今度は貴様が灰となって去るのを見届けてやろう。」 ――ズルゴ、サルカン・ヴォルに対し",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388131&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388131&type=card",
         language: "Japanese",
         multiverseid: 388131,
       },
@@ -677,7 +677,7 @@ const fakeArrayOfCards = [
         flavor:
           '"배신자여, 용케 불에서 살아 돌아왔구나. 이번엔 네가 재가 되어 바스러지는 모습을 지켜볼 것이다." —주르고가 사르칸 볼에게',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388400&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388400&type=card",
         language: "Korean",
         multiverseid: 388400,
       },
@@ -688,7 +688,7 @@ const fakeArrayOfCards = [
         flavor:
           '"Você retornou do fogo, traidor. Desta vez, farei com que você parta como cinzas." — Zurgo, para Sarkhan Vol',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388669&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388669&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388669,
       },
@@ -699,7 +699,7 @@ const fakeArrayOfCards = [
         flavor:
           "«Ты вернулся из огня, предатель. На этот раз я прослежу, чтобы от тебя остался лишь пепел». — Зурго, обращаясь к Сархану Волю",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388938&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388938&type=card",
         language: "Russian",
         multiverseid: 388938,
       },
@@ -710,7 +710,7 @@ const fakeArrayOfCards = [
         flavor:
           "「叛徒，那场大火也没能把你烧死。这次我一定要把你化作灰烬。」 ～珠高怒斥萨坎沃",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386786&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386786&type=card",
         language: "Chinese Simplified",
         multiverseid: 386786,
       },
@@ -721,7 +721,7 @@ const fakeArrayOfCards = [
         flavor:
           "「叛徒，那場大火也沒能把你燒死。這次我一定要把你化作灰燼。」 ～珠高怒斥薩坎沃",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387055&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387055&type=card",
         language: "Chinese Traditional",
         multiverseid: 387055,
       },
@@ -781,7 +781,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386484",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386484&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386484&type=card",
     foreignNames: [
       {
         name: "Den Bären erwecken",
@@ -790,7 +790,7 @@ const fakeArrayOfCards = [
         flavor:
           'Wenn Temur-Krieger in die Kampftrance übergehen, die als „den Bären erwecken" bekannt ist, verlieren sie jedes Verständnis für Freund oder Feind und sehen nur noch Bedrohungen für die Wildnis.',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387291&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387291&type=card",
         language: "German",
         multiverseid: 387291,
       },
@@ -801,7 +801,7 @@ const fakeArrayOfCards = [
         flavor:
           'Cuando los guerreros temur entran en el trance de batalla conocido como el "despertar del oso", pierden toda percepción de amigo o enemigo; solo ven amenazas contra la naturaleza.',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389174&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389174&type=card",
         language: "Spanish",
         multiverseid: 389174,
       },
@@ -812,7 +812,7 @@ const fakeArrayOfCards = [
         flavor:
           "Quand les Temur entrent dans la transe appelée « Éveil de l'ours », ils perdent toute notion d'allié et d'ennemi, et ne perçoivent que les menaces pour la nature.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387560&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387560&type=card",
         language: "French",
         multiverseid: 387560,
       },
@@ -823,7 +823,7 @@ const fakeArrayOfCards = [
         flavor:
           'Quando i guerrieri Temur cadono nella trance di battaglia chiamata "risveglio dell\'orso", perdono la capacità di distinguere gli amici dai nemici e riconoscono solo le minacce alle terre selvagge.',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387829&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387829&type=card",
         language: "Italian",
         multiverseid: 387829,
       },
@@ -834,7 +834,7 @@ const fakeArrayOfCards = [
         flavor:
           "ティムールの戦士たちは「熊の覚醒」と呼ばれる戦闘高揚状態に陥ると、すべての敵味方の認識ができなくなり、代わりに荒野に対する脅威だけを認識するようになる。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388098&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388098&type=card",
         language: "Japanese",
         multiverseid: 388098,
       },
@@ -845,7 +845,7 @@ const fakeArrayOfCards = [
         flavor:
           '테무르 전사가 전투 중에 "곰의 각성"이라 불리는 황홀경에 들어서면, 피아를 구별하는 모든 감각을 상실하고 야생의 위협만 감지하게 된다.',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388367&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388367&type=card",
         language: "Korean",
         multiverseid: 388367,
       },
@@ -856,7 +856,7 @@ const fakeArrayOfCards = [
         flavor:
           'Quando os guerreiros Temur entram no transe de batalha conhecido como "despertar do urso", eles perdem qualquer distinção entre inimigo e aliado, vendo apenas ameaças à floresta.',
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388636&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388636&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388636,
       },
@@ -867,7 +867,7 @@ const fakeArrayOfCards = [
         flavor:
           "Когда воины Темура входят в боевой транс, который называют «пробуждением медведя», они не различают ни врагов, ни друзей, и видят только опасности, грозящие дикой природе.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388905&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388905&type=card",
         language: "Russian",
         multiverseid: 388905,
       },
@@ -878,7 +878,7 @@ const fakeArrayOfCards = [
         flavor:
           "一旦铁木尔战士进入「醒觉熊性」专注状态，他们眼中便没有敌我之分，看到的都是对荒野的威胁。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386753&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386753&type=card",
         language: "Chinese Simplified",
         multiverseid: 386753,
       },
@@ -889,7 +889,7 @@ const fakeArrayOfCards = [
         flavor:
           "一旦鐵木爾戰士進入「醒覺熊性」專注狀態，他們眼中便沒有敵我之分，看到的都是對荒野的威脅。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387022&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387022&type=card",
         language: "Chinese Traditional",
         multiverseid: 387022,
       },
@@ -969,7 +969,7 @@ const fakeArrayOfCards = [
     layout: "normal",
     multiverseid: "386633",
     imageUrl:
-      "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386633&type=card",
+      "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386633&type=card",
     foreignNames: [
       {
         name: "Rakshasas Geheimnis",
@@ -978,7 +978,7 @@ const fakeArrayOfCards = [
         flavor:
           "Die Stimme eines Rakshasa ist sanft, sein Atem süß. Doch jedes Wort ist das Raunen des Irrsinns.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387440&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387440&type=card",
         language: "German",
         multiverseid: 387440,
       },
@@ -989,7 +989,7 @@ const fakeArrayOfCards = [
         flavor:
           "La voz de un ráksasa es suave y su aliento dulce, pero cada palabra es el murmullo de la locura.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389323&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389323&type=card",
         language: "Spanish",
         multiverseid: 389323,
       },
@@ -1000,7 +1000,7 @@ const fakeArrayOfCards = [
         flavor:
           "La voix d'un rakshasa est douce, et son souffle sucré. Mais chaque mot est un murmure de folie.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387709&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387709&type=card",
         language: "French",
         multiverseid: 387709,
       },
@@ -1011,7 +1011,7 @@ const fakeArrayOfCards = [
         flavor:
           "La voce di un rakshasa è soave e il suo respiro dolce, ma ogni parola è un bisbiglio di follia.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387978&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387978&type=card",
         language: "Italian",
         multiverseid: 387978,
       },
@@ -1022,7 +1022,7 @@ const fakeArrayOfCards = [
         flavor:
           "ラクシャーサの声は優しく、その息も甘い香りが漂う。しかし、そのすべての言葉は狂気の呟きである。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388247&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388247&type=card",
         language: "Japanese",
         multiverseid: 388247,
       },
@@ -1033,7 +1033,7 @@ const fakeArrayOfCards = [
         flavor:
           "락샤사의 목소리는 부드럽고, 그 숨결은 달콤하다. 하지만 그 내용은 광기의 웅얼거림일 뿐이다.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388516&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388516&type=card",
         language: "Korean",
         multiverseid: 388516,
       },
@@ -1044,7 +1044,7 @@ const fakeArrayOfCards = [
         flavor:
           "A voz de um rakshasa é suave, seu hálito é doce. Mas cada palavra é um murmúrio de loucura.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388785&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388785&type=card",
         language: "Portuguese (Brazil)",
         multiverseid: 388785,
       },
@@ -1055,7 +1055,7 @@ const fakeArrayOfCards = [
         flavor:
           "Голос ракшаса мягок, дыхание его сладко. Но каждое его слово — шепот безумия.",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389054&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389054&type=card",
         language: "Russian",
         multiverseid: 389054,
       },
@@ -1065,7 +1065,7 @@ const fakeArrayOfCards = [
         type: "法术",
         flavor: "罗刹细语如丝，吐气若兰。然字字句句均是疯狂呓语。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386902&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386902&type=card",
         language: "Chinese Simplified",
         multiverseid: 386902,
       },
@@ -1075,7 +1075,7 @@ const fakeArrayOfCards = [
         type: "巫術",
         flavor: "羅剎細語如絲，吐氣若蘭。然字字句句均是瘋狂囈語。",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387171&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387171&type=card",
         language: "Chinese Traditional",
         multiverseid: 387171,
       },
