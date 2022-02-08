@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const SearchBarContainer = styled.div`
-  margin: 0;
+  margin-top: 80px;
   width: 300px;
   border-radius: 25px;
+  background-color: rgba(196, 196, 196, 0.8);
   &.searchBarContainer {
     display: flex;
     flex-direction: row;
@@ -21,6 +22,7 @@ export const SearchBarContainer = styled.div`
       outline: none;
       border: specify yours;
       width: 80%;
+      background: none;
     }
   }
 `;
