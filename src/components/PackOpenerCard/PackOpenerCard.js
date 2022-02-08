@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 const CardImage = styled.img`
-  height: 80px;
-  width: 60px;
+  height: 160px;
+  width: 120px;
   border: 1px solid black;
+  gap: 20px;
 `;
 
 const PackOpenerCard = ({ card }) => {
