@@ -47,10 +47,10 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "/src/**/*.js",
-      "!/src/**/*.test.js",
-      "!/src/reportWebVitals.js",
-      "!setupTests.js"
+      "src/**/*.js",
+      "!src/**/*.test.js",
+      "!src/reportWebVitals.js",
+      "!src/setupTests.js"
     ],
     "coverageReporters": [
       "html",
