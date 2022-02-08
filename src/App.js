@@ -1,7 +1,6 @@
 import HeaderComponent from "./components/Header/Header";
-import SearchContainer from "./components/SearchContainer/SearchContainer";
-import PackOpenerContainer from "./components/PackOpenerContainer/PackOpenerContainer";
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+
+import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ResultsPage from "./pages/ResultsPage";
@@ -20,9 +19,6 @@ function App() {
         <Route path="/mydeck" element={<MyDeck />} />
         <Route path="/createcard" element={<CreateCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
-
-        <SearchContainer />
-        <PackOpenerContainer />
       </Routes>
     </>
   );
