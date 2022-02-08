@@ -10,4 +10,5 @@ export const SearchContainerStyle = styled.div`
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  width: 100vw;
 `;
