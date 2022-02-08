@@ -35,6 +35,7 @@ export const ButtonFilter = styled(ButtonGeneric)`
   background-color: rgba(196, 196, 196, 0.8);
   border: 2px solid #2c514c;
   border-radius: 17px;
+  margin: 5px;
 `;
 
 export const ButtonCreate = styled(ButtonGeneric)`
