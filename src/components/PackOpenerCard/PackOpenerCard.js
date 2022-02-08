@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const CardImage = styled.img`
   height: 160px;
@@ -11,3 +12,7 @@ const PackOpenerCard = ({ card }) => {
 };
 
 export default PackOpenerCard;
+
+PackOpenerCard.propTypes = {
+  card: PropTypes.object.isRequired,
+};
