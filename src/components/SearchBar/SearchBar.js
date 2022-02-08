@@ -6,8 +6,15 @@ const SearchBar = () => {
   return (
     <>
       <SearchBarContainer className="searchBarContainer">
-        <FontAwesomeIcon icon={faSearch} className="icon" />
-        <input type="text" placeholder="NAME, SETS, TYPES" />
+        <label for="searchBar">
+          <FontAwesomeIcon icon={faSearch} className="icon" />
+        </label>
+        <input
+          type="text"
+          name="searchBar"
+          id="searchBar"
+          placeholder="NAME, SETS, TYPES"
+        />
       </SearchBarContainer>
     </>
   );
