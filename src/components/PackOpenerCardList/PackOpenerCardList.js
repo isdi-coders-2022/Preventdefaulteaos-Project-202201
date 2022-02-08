@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import fakeArrayOfCards from "../../data/fakedata";
 import PackOpenerCard from "../PackOpenerCard/PackOpenerCard";
 
 const PackOpenerCardListContainer = styled.div`
