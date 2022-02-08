@@ -7,7 +7,6 @@ function App() {
     <>
       <HeaderComponent />
       <SearchContainer />
-
       <PackOpenerContainer />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
