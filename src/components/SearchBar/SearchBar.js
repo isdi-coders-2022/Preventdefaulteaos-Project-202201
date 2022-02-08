@@ -6,7 +6,7 @@ const SearchBar = () => {
   return (
     <>
       <SearchBarContainer className="searchBarContainer">
-        <label for="searchBar">
+        <label htmlFor="searchBar">
           <FontAwesomeIcon icon={faSearch} className="icon" />
         </label>
         <input
