@@ -1,4 +1,3 @@
-import PackOpenerCardList from "./components/PackOpenerCardList/PackOpenerCardList";
 import HeaderComponent from "./components/Header/Header";
 
 import SearchContainer from "./components/SearchContainer/SearchContainer";
