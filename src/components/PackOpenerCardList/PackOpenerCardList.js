@@ -1,5 +1,6 @@
 import PackOpenerCard from "../PackOpenerCard/PackOpenerCard";
 import PackOpenerCardListContainer from "../../jsStyles/packOpenerStyle";
+import PropTypes from "prop-types";
 
 const PackOpenerCardList = ({ arrayOfCards }) => {
   return (
@@ -9,6 +10,10 @@ const PackOpenerCardList = ({ arrayOfCards }) => {
       ))}
     </PackOpenerCardListContainer>
   );
+};
+
+PackOpenerCardList.propTypes = {
+  arrayOfCards: PropTypes.array,
 };
 
 export default PackOpenerCardList;
