@@ -1,10 +1,10 @@
 import PackOpenerCard from "../PackOpenerCard/PackOpenerCard";
 import PackOpenerCardListContainer from "../../jsStyles/packOpenerStyle";
 
-const PackOpenerCardList = ({ fakeArrayOfCards }) => {
+const PackOpenerCardList = ({ arrayOfCards }) => {
   return (
     <PackOpenerCardListContainer>
-      {fakeArrayOfCards.map((card) => (
+      {arrayOfCards.map((card) => (
         <PackOpenerCard key={card.id} card={card} />
       ))}
     </PackOpenerCardListContainer>

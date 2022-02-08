@@ -5,14 +5,14 @@ import fakeArrayOfCards from "./data/fakedata";
 import SearchButtonsContainer from "./components/SearchButtonContainer/SearchButtonContainer";
 
 function App() {
-  const BoosterPackAPI = fakeArrayOfCards;
+  const boosterPackAPI = fakeArrayOfCards;
+
   return (
     <>
       <HeaderComponent />
-      <PackOpenerCardList />
       <SearchBar />
       <SearchButtonsContainer />
-      <PackOpenerCardList fakeArrayOfCards={BoosterPackAPI} />
+      <PackOpenerCardList arrayOfCards={boosterPackAPI} />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
       <Button type="wood" text="MAKE YOUR CARD" />
