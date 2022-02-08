@@ -2,13 +2,15 @@ import PackOpenerCardList from "./components/PackOpenerCardList/PackOpenerCardLi
 
 import Button from "./components/Button/Button";
 import SearchBar from "./components/SearchBar/SearchBar";
+import fakeArrayOfCards from "./data/fakedata";
 
 function App() {
+  const BoosterPackAPI = fakeArrayOfCards;
   return (
     <>
       <Button type="wood" text="uwu" />
       <SearchBar />
-      <PackOpenerCardList />
+      <PackOpenerCardList fakeArrayOfCards={BoosterPackAPI} />
       {/* <Button type="onCard" text="More Info" />
       <Button type="filter" text="Kamigawa" />
       <Button type="wood" text="MAKE YOUR CARD" />

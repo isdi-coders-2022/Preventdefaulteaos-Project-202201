@@ -12,7 +12,7 @@ const PackOpenerCardListContainer = styled.div`
   gap: 10px;
 `;
 
-const PackOpenerCardList = () => {
+const PackOpenerCardList = ({ fakeArrayOfCards }) => {
   return (
     <PackOpenerCardListContainer>
       {fakeArrayOfCards.map((card) => (
