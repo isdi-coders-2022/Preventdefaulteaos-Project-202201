@@ -13,4 +13,9 @@ export const SearchButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(196, 196, 196, 0.8);
+
+  & p {
+    font-size: 20px;
+    font-family: monospace;
+  }
 `;
