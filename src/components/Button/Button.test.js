@@ -3,7 +3,7 @@ import Button from "./Button";
 import reactTestRenderer from "react-test-renderer";
 
 describe("Given a Button component", () => {
-  describe("When it's instanciated with 'create' filter", () => {
+  describe("When it's instanciated", () => {
     test("Then it should render a button", () => {
       const buttonFilter = "create";
 
