@@ -5,6 +5,8 @@ export const loadBoosterCardsAction = (boosterCards) => ({
   boosterCards,
 });
 
+
 export const emptyBoosterCardsAction = () => ({
+
   type: actionsTypes.emptyBoosterCards,
 });
