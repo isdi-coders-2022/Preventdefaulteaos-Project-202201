@@ -5,7 +5,6 @@ export const loadBoosterCards = (boosterCards) => ({
   boosterCards,
 });
 
-export const deleteAllBoosterCards = (boosterCards) => ({
-  type: actionsTypes.deleteAllBoosterCards,
-  boosterCards,
+export const emptyBoosterCards = () => ({
+  type: actionsTypes.emptyBoosterCards,
 });
