@@ -5,39 +5,79 @@ export const Header = styled.header`
   background-color: #2c514c;
   width: 100vw;
   flex-direction: row;
-  height: 100px;
-  box-shadow: 0 0 10px 0;
-
-  & div {
+  height: 50px;
+  justify-content: space-between;
+  & .logo-container {
     width: 70vw;
     position: relative;
     height: 80px;
+    & img {
+      width: 260px;
+      position: absolute;
+      height: 80px;
+    }
   }
-
-  & img {
-    width: 260px;
-    position: absolute;
-    height: 80px;
-  }
-
-  & nav {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 900;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
+  & .cont {
+    display: none;
     & button {
-      background-color: rgba(196, 196, 196, 0.9);
+      display: none;
     }
   }
 
   @media (min-width: 600px) {
-    & nav {
-      align-items: center;
+    & .cont {
+      display: flex;
       flex-direction: row;
+      color: #fff;
+      border-radius: none;
+     & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        height: 40px;
+        margin: 5px;
+        background-size: cover;
+        background-image: url("images/wooden-button.png");
+        border: none;
+        background-color: #2c514c;
+     }
+  }
+`;
+
+export const Menu = styled.nav`
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  width: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+
+  & .hamburguer-container {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    & .hamburguer {
+      background-color: black;
+      padding: 2px;
+      margin: 3px;
+      width: 30px;
+      border-radius: 5px;
     }
+    &.active .hamburguer:nth-child(2) {
+      opacity: 0;
+    }
+    &.active .hamburguer:nth-child(1) {
+      transform: rotate(45deg) translate(7.5px, ${33 / 2 - 4.5}px);
+    }
+    &.active .hamburguer:nth-child(3) {
+      transform: rotate(-45deg) translate(7.5px, -${33 / 2 - 4.5}px);
+    }
+  }
+
+  & button {
+    display: none;
   }
 `;

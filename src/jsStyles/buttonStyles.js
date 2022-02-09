@@ -12,7 +12,7 @@ export const ButtonGeneric = styled.button`
 `;
 
 export const ButtonWood = styled(ButtonGeneric)`
-  background-image: url("images/wooden-button.png");
+  background-color: rgba(196, 196, 196, 0.8);
   background-position: center;
   color: #fff;
   object-fit: fill;
@@ -22,10 +22,8 @@ export const ButtonWood = styled(ButtonGeneric)`
   border: 4px solid #2c514c;
 
   @media (min-width: 600px) {
+    background-image: url("images/wooden-button.png");
     border: none;
-    margin-right: 10px;
-    width: 250px;
-    height: 50px;
   }
 `;
 
