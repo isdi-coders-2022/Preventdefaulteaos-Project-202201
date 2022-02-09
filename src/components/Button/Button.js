@@ -37,7 +37,7 @@ Button.propTypes = {
   className: PropTypes.string,
   actionOnClick: PropTypes.func,
   text: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["wood", "onCard", "filter", "create"]).isRequired,
 };
 
 export default Button;
