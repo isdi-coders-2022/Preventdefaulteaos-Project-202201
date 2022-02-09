@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
+import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
 
 import PackOpenerContainer from "./PackOpenerContainer";
 
@@ -9,7 +10,9 @@ describe("Given a PackOpenerContainer component", () => {
       render(
         <>
           <BoosterCardsContextProvider>
-            <PackOpenerContainer />
+            <ResultsContextProvider>
+              <PackOpenerContainer />{" "}
+            </ResultsContextProvider>
           </BoosterCardsContextProvider>
         </>
       );

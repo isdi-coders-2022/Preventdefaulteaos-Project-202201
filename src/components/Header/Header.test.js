@@ -1,10 +1,18 @@
 import { render, screen } from "@testing-library/react";
+import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
+import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
 import HeaderComponent from "./Header";
 
 describe("Given a Header component", () => {
   describe("When it's instanciated", () => {
     test("Then it should render the Header Component", () => {
-      render(<HeaderComponent />);
+      render(
+        <BoosterCardsContextProvider>
+          <ResultsContextProvider>
+            <HeaderComponent />
+          </ResultsContextProvider>
+        </BoosterCardsContextProvider>
+      );
 
       const headerRender = screen.getByRole("banner");
 
@@ -12,7 +20,13 @@ describe("Given a Header component", () => {
     });
 
     test("Then it should render the image logo", () => {
-      render(<HeaderComponent />);
+      render(
+        <BoosterCardsContextProvider>
+          <ResultsContextProvider>
+            <HeaderComponent />
+          </ResultsContextProvider>
+        </BoosterCardsContextProvider>
+      );
 
       const headerRender = screen.getByRole("img");
 
@@ -20,7 +34,13 @@ describe("Given a Header component", () => {
     });
 
     test("Then it should render the navigation bar", () => {
-      render(<HeaderComponent />);
+      render(
+        <BoosterCardsContextProvider>
+          <ResultsContextProvider>
+            <HeaderComponent />
+          </ResultsContextProvider>
+        </BoosterCardsContextProvider>
+      );
 
       const headerRender = screen.getByRole("navigation");
 
