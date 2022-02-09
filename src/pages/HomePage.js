@@ -1,11 +1,14 @@
 import PackOpenerContainer from "../components/PackOpenerContainer/PackOpenerContainer";
 import SearchContainer from "../components/SearchContainer/SearchContainer";
+import BoosterCardsContextProvider from "../store/contexts/BoosterCardsContextProvider";
 
 const HomePage = () => {
   return (
     <>
       <SearchContainer />
-      <PackOpenerContainer />
+      <BoosterCardsContextProvider>
+        <PackOpenerContainer />
+      </BoosterCardsContextProvider>
     </>
   );
 };
