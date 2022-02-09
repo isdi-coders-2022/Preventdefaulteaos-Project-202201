@@ -17,9 +17,16 @@ export const ButtonWood = styled(ButtonGeneric)`
   color: #fff;
   object-fit: fill;
   border-radius: none;
-  width: 250px;
-  height: 100px;
-  border-radius: none;
+  width: 200px;
+  height: 80px;
+  border: 4px solid #2c514c;
+
+  @media (min-width: 600px) {
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+    height: 50px;
+  }
 `;
 
 export const ButtonOnCard = styled(ButtonGeneric)`

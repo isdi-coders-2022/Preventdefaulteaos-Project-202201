@@ -5,8 +5,8 @@ export const Header = styled.header`
   background-color: #2c514c;
   width: 100vw;
   flex-direction: row;
-  height: 50px;
-  justify-content: space-between;
+  height: 100px;
+
   & div {
     width: 70vw;
     position: relative;
@@ -23,14 +23,20 @@ export const Header = styled.header`
     color: #fff;
     font-size: 30px;
     font-weight: 900;
-    width: 50px;
-    align-items: center;
+    align-items: flex-end;
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
-    margin-right: 20px;
 
     & button {
-      display: none;
+      background-color: rgba(196, 196, 196, 0.9);
+    }
+  }
+
+  @media (min-width: 600px) {
+    & nav {
+      align-items: center;
+      flex-direction: row;
     }
   }
 `;
