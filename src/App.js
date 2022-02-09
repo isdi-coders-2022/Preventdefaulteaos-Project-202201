@@ -20,6 +20,7 @@ function App() {
         <Route path="/createcard" element={<CreateCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+
     </>
   );
 }
