@@ -1,5 +1,6 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import styled from "styled-components";
+import useMagicApi from "../../hooks/useMagicApi";
 
 import {
   OpenPackButtonContainer,
@@ -18,6 +19,8 @@ const DivButton = styled.div`
 `;
 
 const PackOpenerContainer = () => {
+  const { loadBoosterCardsAPI } = useMagicApi();
+
   const arrayFromApi = [
     {
       id: 1,
@@ -33,16 +36,23 @@ const PackOpenerContainer = () => {
     },
   ];
 
-  const { boosterCards, dispatch } = useContext(BoosterCardsContext);
-
-  const openBooster = () => {
-    dispatch(loadBoosterCardsAction(arrayFromApi));
+  const { boosterCards } = useContext(BoosterCardsContext);
+  const cargarCartas = async () => {
+    await loadBoosterCardsAPI();
   };
+
+  // const openBooster = () => {
+  //   dispatch(loadBoosterCardsAction(arrayFromApi));
+  // };
   return (
     <>
       <OpenPackButtonContainer>
         <DivButton>
-          <Button type="create" text="OPEN PACK!" actionOnClick={openBooster} />
+          <Button
+            type="create"
+            text="OPEN PACK!"
+            actionOnClick={cargarCartas}
+          />
         </DivButton>
         <OpenPackButtonContainerImage src="images/OpenPackButtonContainer-background.png"></OpenPackButtonContainerImage>
       </OpenPackButtonContainer>
