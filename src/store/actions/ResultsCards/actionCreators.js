@@ -1,4 +1,4 @@
-import actionsTypes from "./actionsTypes";
+import actionsTypes from "./actionTypes";
 
 export const loadResultsCardsAction = (resultsCards) => ({
   type: actionsTypes.loadResultsCards,

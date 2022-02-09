@@ -1,13 +1,13 @@
 import { useReducer } from "react";
 
-import boosterCardsReducer from "../reducers/boosterCardsReducer";
+import resultsCardsReducer from "../reducers/resultsCardsReducer";
 import ResultsContext from "./ResultsContext";
 
 const ResultsContextProvider = ({ children }) => {
-  const [boosterCards, dispatch] = useReducer(boosterCardsReducer, []);
+  const [resultsCards, dispatch] = useReducer(resultsCardsReducer, []);
 
   return (
-    <ResultsContext.Provider value={{ boosterCards, dispatch }}>
+    <ResultsContext.Provider value={{ resultsCards, dispatch }}>
       {children}
     </ResultsContext.Provider>
   );
