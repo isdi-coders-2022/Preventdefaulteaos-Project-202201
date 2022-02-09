@@ -30,7 +30,7 @@ export const Header = styled.header`
       flex-direction: row;
       color: #fff;
       border-radius: none;
-     & button {
+      & button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -41,7 +41,8 @@ export const Header = styled.header`
         background-image: url("images/wooden-button.png");
         border: none;
         background-color: #2c514c;
-     }
+      }
+    }
   }
 `;
 
