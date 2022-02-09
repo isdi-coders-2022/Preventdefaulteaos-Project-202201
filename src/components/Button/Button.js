@@ -35,7 +35,7 @@ const Button = ({ className, actionOnClick, text, type }) => {
 
 Button.propTypes = {
   className: PropTypes.string,
-  actionOnClick: PropTypes.func,
+
   text: PropTypes.string,
   type: PropTypes.oneOf(["wood", "onCard", "filter", "create"]).isRequired,
 };
