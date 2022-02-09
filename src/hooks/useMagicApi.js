@@ -1,4 +1,4 @@
-import { useCallback, useContext } from "react";
+import { useContext } from "react";
 import { loadBoosterCardsAction } from "../store/actions/BoosterCards/actionCreators";
 import BoosterCardsContext from "../store/contexts/BoosterCardsContext";
 
@@ -12,8 +12,6 @@ const useMagicApi = () => {
     const boosterCards = await response.json();
     dispatch(loadBoosterCardsAction(boosterCards));
   };
-
-  console.log(loadBoosterCardsAPI);
 
   return { loadBoosterCardsAPI };
 };
