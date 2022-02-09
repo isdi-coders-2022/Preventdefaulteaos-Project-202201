@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Card from "./Card";
+import reactTestRenderer from "react-test-renderer";
 
 describe("Given a Card component", () => {
   const givenCardObject = {
@@ -69,6 +70,15 @@ describe("Given a Card component", () => {
       const buttonRender = screen.getByRole("heading", { name: cardName });
 
       expect(buttonRender).toBeInTheDocument();
+    });
+  });
+
+  describe("When executing the component", () => {
+    test("Then it should render", () => {
+      const component = reactTestRenderer.create(
+        <Card card={givenCardObject} />
+      );
+      expect(component.toJSON()).toMatchSnapshot();
     });
   });
 });

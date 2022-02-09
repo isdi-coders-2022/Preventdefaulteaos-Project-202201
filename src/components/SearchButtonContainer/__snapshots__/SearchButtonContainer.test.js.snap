@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a SearchButtonsContainer component When recive a component Then it should render 1`] = `
+<div
+  className="sc-bdvvtL kLsyKV searchButtonContainer"
+>
+  <p>
+    Latest expansions:
+  </p>
+  <button
+    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+  >
+    Kamigawa
+  </button>
+  <button
+    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+  >
+    Innastrad
+  </button>
+  <button
+    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+  >
+    Commander
+  </button>
+</div>
+`;

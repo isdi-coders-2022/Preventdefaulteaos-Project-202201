@@ -1,10 +1,12 @@
 import actionsTypes from "./actionsTypes";
 
-export const loadBoosterCards = (boosterCards) => ({
+export const loadBoosterCardsAction = (boosterCards) => ({
   type: actionsTypes.loadBoosterCards,
   boosterCards,
 });
 
-export const emptyBoosterCards = () => ({
+
+export const emptyBoosterCardsAction = () => ({
+
   type: actionsTypes.emptyBoosterCards,
 });
