@@ -5,15 +5,12 @@ import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 
 import reportWebVitals from "./reportWebVitals";
-import BoosterCardsContextProvider from "./store/contexts/BoosterCardsContextProvider";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BoosterCardsContextProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </BoosterCardsContextProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
