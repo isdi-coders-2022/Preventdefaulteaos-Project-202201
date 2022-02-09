@@ -4,10 +4,12 @@ import SearchButtonsContainer from "../SearchButtonContainer/SearchButtonContain
 
 const SearchContainer = () => {
   return (
-    <SearchContainerStyle>
-      <SearchBar />
-      <SearchButtonsContainer />
-    </SearchContainerStyle>
+    <>
+      <SearchContainerStyle>
+        <SearchBar />
+        <SearchButtonsContainer />
+      </SearchContainerStyle>
+    </>
   );
 };
 export default SearchContainer;
