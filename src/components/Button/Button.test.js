@@ -18,7 +18,10 @@ describe("Given a Button component", () => {
 
   describe("When executing the component", () => {
     test("Then it should render", () => {
-      const component = reactTestRenderer.create(<Button />);
+      const buttonFilter = "create";
+      const component = reactTestRenderer.create(
+        <Button type={buttonFilter} />
+      );
       expect(component.toJSON()).toMatchSnapshot();
     });
   });
