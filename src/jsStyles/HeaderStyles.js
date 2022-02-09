@@ -7,6 +7,8 @@ export const Header = styled.header`
   flex-direction: row;
   height: 50px;
   justify-content: space-between;
+  box-shadow: 0 0 10px 0;
+
   & div {
     width: 70vw;
     position: relative;

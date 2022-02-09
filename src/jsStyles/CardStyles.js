@@ -9,6 +9,7 @@ const CardComponent = styled.div`
   height: 200px;
   border-radius: 15px;
   border: 2px solid #fff;
+  padding-bottom: 8px;
 
   & img {
     width: 120px;
