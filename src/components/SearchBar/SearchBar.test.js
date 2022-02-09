@@ -4,11 +4,11 @@ import SearchBar from "./SearchBar";
 describe("Given a SearchBar component", () => {
   describe("When it's render with 'NAME, SETS, TYPES'", () => {
     test("Then it should render a input", () => {
-      const inputFilter = "NAME, SETS, TYPES";
+      const placeholderText = "NAME, SETS, TYPES";
 
       render(<SearchBar />);
 
-      const inputRender = screen.getByPlaceholderText(inputFilter);
+      const inputRender = screen.getByPlaceholderText(placeholderText);
 
       expect(inputRender).toBeInTheDocument();
     });

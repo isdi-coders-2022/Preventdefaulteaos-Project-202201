@@ -1,8 +1,11 @@
+import { useReducer } from "react";
 import BoosterCardsContext from "./BoosterCardsContext";
 
 const BoosterCardsContextProvider = ({ children }) => {
   return (
-    <BoosterCardsContext.Provider>{children}</BoosterCardsContext.Provider>
+    <BoosterCardsContext.Provider value={"hola"}>
+      {children}
+    </BoosterCardsContext.Provider>
   );
 };
 
