@@ -1,5 +1,3 @@
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Header } from "../../jsStyles/HeaderStyles";
 import Button from "../Button/Button";
 
@@ -13,7 +11,6 @@ const HeaderComponent = () => {
         <Button type="wood" text="HOME" />
         <Button type="wood" text="MY DECK" />
         <Button type="wood" text="MAKE YOUR CARD" />
-        <FontAwesomeIcon icon={faBars} />
       </nav>
     </Header>
   );
