@@ -5,7 +5,7 @@ const boosterCardsReducer = (currentBoosterCards, action) => {
 
   switch (action.type) {
     case actionsTypes.loadBoosterCards:
-      newBoosterCards = [...action.boosterCards];
+      newBoosterCards = [...action.boosterCards.cards];
       break;
     case actionsTypes.emptyBoosterCards:
       newBoosterCards = [];

@@ -2,7 +2,7 @@
 
 exports[`Given a Card component When executing the component Then it should render 1`] = `
 <div
-  className="sc-jRQBWg gticsG card"
+  className="sc-jRQBWg eTyaUi card"
 >
   <img
     alt="Overtaker card"
