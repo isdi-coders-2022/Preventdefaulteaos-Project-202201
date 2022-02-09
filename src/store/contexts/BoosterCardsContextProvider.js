@@ -1,4 +1,3 @@
-import { useReducer } from "react";
 import BoosterCardsContext from "./BoosterCardsContext";
 
 const BoosterCardsContextProvider = ({ children }) => {
