@@ -15,14 +15,18 @@ const HeaderComponent = () => {
   return (
     <Header>
       <div className="logo-container">
-        <img src="images/magic-logo.svg.png" alt="magic logo"></img>
+        <Link to="/home">
+          <img src="images/magic-logo.svg.png" alt="magic logo"></img>
+        </Link>
       </div>
       <FloatingMenu isActive={isActive} />
       <nav className="cont">
         <Link to="/home">
           <Button type="wood" text="HOME" />
         </Link>
-        <Button type="wood" text="MY DECK" />
+        <Link to="/mydeck">
+          <Button type="wood" text="MY DECK" />
+        </Link>
         <Button type="wood" text="MAKE YOUR CARD" />
       </nav>
       <Burguer actionOnClick={toggleActive} isActive={isActive} />

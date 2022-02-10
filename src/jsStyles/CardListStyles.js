@@ -6,7 +6,6 @@ export const H2 = styled.h2`
   font-size: 25px;
   position: relative;
   top: 100px;
-  z-index: -10;
 `;
 
 export const CardListComponent = styled.div`
@@ -19,5 +18,4 @@ export const CardListComponent = styled.div`
   align-items: center;
   position: relative;
   top: 100px;
-  z-index: -10;
 `;
