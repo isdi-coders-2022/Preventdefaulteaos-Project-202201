@@ -12,11 +12,18 @@ const CardList = () => {
   useEffect(() => {
     loadResultsCardsAPI();
   }, [loadResultsCardsAPI]);
+
+  const cardListWithImages = resultsCards.filter((card) =>
+    card.hasOwnProperty("imageUrl")
+  );
+
+  console.log(cardListWithImages);
+
   return (
     <>
       <H2>RESULTS:</H2>
       <CardListComponent>
-        {resultsCards.map((card) => (
+        {cardListWithImages.map((card) => (
           <Card key={card.id} card={card} />
         ))}
       </CardListComponent>

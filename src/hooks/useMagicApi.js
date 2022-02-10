@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useCallback, useContext } from "react";
 import { loadBoosterCardsAction } from "../store/actions/BoosterCards/actionCreators";
 import { loadResultsCardsAction } from "../store/actions/ResultsCards/actionCreators";
 import BoosterCardsContext from "../store/contexts/BoosterCardsContext";
@@ -19,12 +19,11 @@ const useMagicApi = () => {
     dispatch(loadBoosterCardsAction(boosterCards));
   };
 
-  const loadResultsCardsAPI = async () => {
+  const loadResultsCardsAPI = useCallback(async () => {
     const response = await fetch(apiGetResultsCardsURL);
     const resultsCards = await response.json();
-
     dispatchResults(loadResultsCardsAction(resultsCards));
-  };
+  }, [apiGetResultsCardsURL, dispatchResults]);
 
   return { loadBoosterCardsAPI, loadResultsCardsAPI };
 };
