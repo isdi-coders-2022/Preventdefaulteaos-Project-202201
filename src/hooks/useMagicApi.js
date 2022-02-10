@@ -13,12 +13,11 @@ const useMagicApi = () => {
   const { dispatch } = useContext(BoosterCardsContext);
   const { dispatch: dispatchResults } = useContext(ResultsContext);
 
-  const apiGetBoosterPackURL =
-    "https://api.magicthegathering.io/v1/sets/ktk/booster";
+  const apiGetBoosterPackURL = process.env.REACT_APP_URLAPI;
 
-  const apiGetResultsCardsURL = "https://api.magicthegathering.io/v1/cards";
+  const apiGetResultsCardsURL = process.env.REACT_APP_URLAPI100CARDS;
 
-  const localApiURL = "https://magic-world-api.herokuapp.com/magicWorld/";
+  const localApiURL = process.env.REACT_APP_URLAPILOCAL;
 
   const loadBoosterCardsAPI = async () => {
     const response = await fetch(apiGetBoosterPackURL);
@@ -31,7 +30,7 @@ const useMagicApi = () => {
     const resultsCards = await response.json();
     dispatchResults(loadResultsCardsAction(resultsCards));
   }, [apiGetResultsCardsURL, dispatchResults]);
-  //prueba
+
   const addCardsAPI = async (card) => {
     const response = await fetch(localApiURL, {
       method: "POST",
