@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Header } from "../../jsStyles/HeaderStyles";
-import BurgerComponent from "../Burguer/BurguerComponent";
+import Burguer from "../Burguer/Burguer";
 import Button from "../Button/Button";
 import FloatingMenu from "../FloatingMenu/FloatingMenu";
 
@@ -22,7 +22,7 @@ const HeaderComponent = () => {
         <Button type="wood" text="MY DECK" />
         <Button type="wood" text="MAKE YOUR CARD" />
       </nav>
-      <BurgerComponent actionOnClick={toggleActive} isActive={isActive} />
+      <Burguer actionOnClick={toggleActive} isActive={isActive} />
     </Header>
   );
 };

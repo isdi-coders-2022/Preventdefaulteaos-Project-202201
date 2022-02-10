@@ -21,12 +21,12 @@ describe("Given a SearchButtonsContainer component", () => {
 
       const items = screen.getAllByRole("button");
 
-      expect(items).toHaveLength(3);
+      expect(items).toHaveLength(1);
     });
   });
 
-  describe("when it receive a button with name 'Kamigawa'", () => {
-    test("then it should render a button with name 'Kamigawa'", () => {
+  describe("when it receive a button with name 'Show Cards'", () => {
+    test("then it should render a button with name 'Show Cards'", () => {
       render(
         <BrowserRouter>
           <BoosterCardsContextProvider>
@@ -36,7 +36,7 @@ describe("Given a SearchButtonsContainer component", () => {
           </BoosterCardsContextProvider>
         </BrowserRouter>
       );
-      const text = "Kamigawa";
+      const text = "Show Cards";
 
       const buttonText = screen.getByText(text);
 
@@ -44,8 +44,8 @@ describe("Given a SearchButtonsContainer component", () => {
     });
   });
 
-  describe("when it recives a SearchButtonsContainer with the text 'Latest expansions:'", () => {
-    test("then it render a p with the text 'Latest expansions:'", () => {
+  describe("when it recives a SearchButtonsContainer with the text 'Show me the cards'", () => {
+    test("then it render a p with the text 'Show me the cards'", () => {
       render(
         <BrowserRouter>
           <BoosterCardsContextProvider>
@@ -55,7 +55,7 @@ describe("Given a SearchButtonsContainer component", () => {
           </BoosterCardsContextProvider>
         </BrowserRouter>
       );
-      const p = "Latest expansions:";
+      const p = "Show me the cards";
 
       const pRender = screen.getByText(p);
 

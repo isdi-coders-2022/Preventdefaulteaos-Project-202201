@@ -10,9 +10,8 @@ const Menu = styled.div`
   right: 0;
   position: absolute;
 
-    @media (min-width: 600px) {
-      display: none;
-    }
+  @media (min-width: 600px) {
+    display: none;
   }
 `;
 

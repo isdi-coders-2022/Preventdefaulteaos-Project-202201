@@ -5,7 +5,7 @@ exports[`Given a SearchButtonsContainer component When recive a component Then i
   className="sc-bdvvtL kLsyKV searchButtonContainer"
 >
   <p>
-    Latest expansions:
+    Show me the cards
   </p>
   <a
     href="/results"
@@ -14,18 +14,8 @@ exports[`Given a SearchButtonsContainer component When recive a component Then i
     <button
       className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
     >
-      Kamigawa
+      Show Cards
     </button>
   </a>
-  <button
-    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
-  >
-    Innastrad
-  </button>
-  <button
-    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
-  >
-    Commander
-  </button>
 </div>
 `;

@@ -7,12 +7,12 @@ import Button from "../Button/Button";
 const SearchButtonsContainer = () => {
   return (
     <SearchButtonContainer className="searchButtonContainer">
-      <p>Latest expansions:</p>
+      <p>Show me the cards</p>
       <Link to="/results">
-        <Button type="filter" text="Kamigawa" />
+
+        <Button type="filter" text="Show Cards"  />
+
       </Link>
-      <Button type="filter" text="Innastrad" />
-      <Button type="filter" text="Commander" />
     </SearchButtonContainer>
   );
 };

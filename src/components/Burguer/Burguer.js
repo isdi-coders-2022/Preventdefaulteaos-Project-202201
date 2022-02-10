@@ -32,7 +32,7 @@ const BurgerBar = styled.span`
   transition: all 0.2s;
 `;
 
-const BurgerComponent = ({ isActive, actionOnClick }) => {
+const Burguer = ({ isActive, actionOnClick }) => {
   return (
     <BurgerContainer
       title="Navigation Menu"
@@ -46,4 +46,4 @@ const BurgerComponent = ({ isActive, actionOnClick }) => {
   );
 };
 
-export default BurgerComponent;
+export default Burguer;
