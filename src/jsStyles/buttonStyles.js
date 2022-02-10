@@ -43,6 +43,10 @@ export const ButtonOnCard = styled(ButtonGeneric)`
   font-size: 15px;
   cursor: pointer;
   font-family: "MedievalSharp";
+
+  &.added {
+    background-color: red;
+  }
 `;
 
 export const ButtonFilter = styled(ButtonGeneric)`
