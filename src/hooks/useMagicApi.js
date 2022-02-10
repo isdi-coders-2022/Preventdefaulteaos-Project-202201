@@ -2,6 +2,7 @@ import {
   addCardAction,
   deleteCardAction,
   loadBoosterCardsAction,
+  loadMyDeckCardAction,
 } from "../store/actions/BoosterCards/actionCreators";
 import { useCallback, useContext } from "react";
 import { loadResultsCardsAction } from "../store/actions/ResultsCards/actionCreators";
@@ -53,12 +54,18 @@ const useMagicApi = () => {
       throw new Error();
     }
   };
+  const loadMyDeckCardsAPI = useCallback(async () => {
+    const response = await fetch(localApiURL);
+    const resultsCards = await response.json();
+    dispatch(loadMyDeckCardAction(resultsCards));
+  }, [localApiURL, dispatch]);
 
   return {
     loadBoosterCardsAPI,
     loadResultsCardsAPI,
     addCardsAPI,
     deleteCardAPI,
+    loadMyDeckCardsAPI,
   };
 };
 

@@ -6,6 +6,8 @@ import ResultsContext from "../../store/contexts/ResultsContext";
 import useMagicApi from "../../hooks/useMagicApi";
 
 import styled from "styled-components";
+import BoosterCardsContext from "../../store/contexts/BoosterCardsContext";
+import MyDeckCard from "../MyDeckCard/MyDeckCard";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -15,15 +17,22 @@ const HeaderContainer = styled.div`
 `;
 
 const MyDeckList = () => {
+  const { loadMyDeckCardsAPI } = useMagicApi();
+  const { boosterCards } = useContext(BoosterCardsContext);
+
+  useEffect(() => {
+    loadMyDeckCardsAPI();
+  }, [loadMyDeckCardsAPI]);
+
   return (
     <>
       <HeaderContainer>
-        <H2>RESULTS:</H2>
+        <H2>MY DECK:</H2>
       </HeaderContainer>
 
       <CardListComponent>
-        {cardListWithImages.map((card) => (
-          <Card key={card.id} card={card} />
+        {boosterCards.map((card) => (
+          <MyDeckCard key={card.id} card={card} />
         ))}
       </CardListComponent>
     </>

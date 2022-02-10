@@ -18,6 +18,10 @@ const boosterCardsReducer = (currentBoosterCards, action) => {
         (card) => card.id !== action.id
       );
       break;
+    case actionsTypes.loadMyDeckCards:
+      newBoosterCards = [...action.myDeckCards];
+      break;
+
     default:
       newBoosterCards = [...currentBoosterCards];
   }

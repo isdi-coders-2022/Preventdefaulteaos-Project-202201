@@ -18,3 +18,8 @@ export const deleteCardAction = (id) => ({
   type: actionsTypes.deleteCard,
   id,
 });
+
+export const loadMyDeckCardAction = (myDeckCards) => ({
+  type: actionsTypes.loadMyDeckCards,
+  myDeckCards,
+});
