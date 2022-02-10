@@ -6,6 +6,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ResultsPage from "./pages/ResultsPage";
 import MyDeck from "./pages/MyDeckPage";
 import CreateCardPage from "./pages/CreateCardPage";
+import MoreInfoPage from "./pages/MoreInfo";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/mydeck" element={<MyDeck />} />
         <Route path="/createcard" element={<CreateCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
+        <Route path="/moreinfo" element={<MoreInfoPage />} />
       </Routes>
     </>
   );
