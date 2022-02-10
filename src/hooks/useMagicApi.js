@@ -1,11 +1,11 @@
+import { loadBoosterCardsAction } from "../store/actions/BoosterCards/actionCreators";
+import { useCallback, useContext } from "react";
 import {
   addCardAction,
   deleteCardAction,
-  loadBoosterCardsAction,
   loadMyDeckCardAction,
-} from "../store/actions/BoosterCards/actionCreators";
-import { useCallback, useContext } from "react";
-import { loadResultsCardsAction } from "../store/actions/ResultsCards/actionCreators";
+  loadResultsCardsAction,
+} from "../store/actions/ResultsCards/actionCreators";
 import BoosterCardsContext from "../store/contexts/BoosterCardsContext";
 import ResultsContext from "../store/contexts/ResultsContext";
 
@@ -41,7 +41,7 @@ const useMagicApi = () => {
       body: JSON.stringify(card),
     });
     const newCard = await response.json();
-    dispatch(addCardAction(newCard));
+    dispatchResults(addCardAction(newCard));
   };
 
   const deleteCardAPI = async (id) => {
@@ -49,7 +49,7 @@ const useMagicApi = () => {
       method: "DELETE",
     });
     if (response.ok) {
-      dispatch(deleteCardAction(id));
+      dispatchResults(deleteCardAction(id));
     } else {
       throw new Error();
     }
@@ -57,8 +57,8 @@ const useMagicApi = () => {
   const loadMyDeckCardsAPI = useCallback(async () => {
     const response = await fetch(localApiURL);
     const resultsCards = await response.json();
-    dispatch(loadMyDeckCardAction(resultsCards));
-  }, [localApiURL, dispatch]);
+    dispatchResults(loadMyDeckCardAction(resultsCards));
+  }, [localApiURL, dispatchResults]);
 
   return {
     loadBoosterCardsAPI,

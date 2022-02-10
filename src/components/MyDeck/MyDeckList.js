@@ -1,13 +1,12 @@
-import Card from "../Card/Card";
-
 import { H2, CardListComponent } from "../../jsStyles/CardListStyles";
 import { useContext, useEffect } from "react";
-import ResultsContext from "../../store/contexts/ResultsContext";
+
 import useMagicApi from "../../hooks/useMagicApi";
 
 import styled from "styled-components";
 import BoosterCardsContext from "../../store/contexts/BoosterCardsContext";
 import MyDeckCard from "../MyDeckCard/MyDeckCard";
+import ResultsContext from "../../store/contexts/ResultsContext";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -18,7 +17,7 @@ const HeaderContainer = styled.div`
 
 const MyDeckList = () => {
   const { loadMyDeckCardsAPI } = useMagicApi();
-  const { boosterCards } = useContext(BoosterCardsContext);
+  const { resultsCards } = useContext(ResultsContext);
 
   useEffect(() => {
     loadMyDeckCardsAPI();
@@ -31,7 +30,7 @@ const MyDeckList = () => {
       </HeaderContainer>
 
       <CardListComponent>
-        {boosterCards.map((card) => (
+        {resultsCards.map((card) => (
           <MyDeckCard key={card.id} card={card} />
         ))}
       </CardListComponent>
