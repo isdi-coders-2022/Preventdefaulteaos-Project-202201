@@ -10,6 +10,14 @@ const boosterCardsReducer = (currentBoosterCards, action) => {
     case actionsTypes.emptyBoosterCards:
       newBoosterCards = [];
       break;
+    case actionsTypes.addCard:
+      newBoosterCards = [...currentBoosterCards, action.card];
+      break;
+    case actionsTypes.deleteCard:
+      newBoosterCards = currentBoosterCards.filter(
+        (card) => card.id !== action.id
+      );
+      break;
     default:
       newBoosterCards = [...currentBoosterCards];
   }
