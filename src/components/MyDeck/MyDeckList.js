@@ -4,7 +4,6 @@ import { useContext, useEffect } from "react";
 import useMagicApi from "../../hooks/useMagicApi";
 
 import styled from "styled-components";
-import BoosterCardsContext from "../../store/contexts/BoosterCardsContext";
 import MyDeckCard from "../MyDeckCard/MyDeckCard";
 import ResultsContext from "../../store/contexts/ResultsContext";
 
