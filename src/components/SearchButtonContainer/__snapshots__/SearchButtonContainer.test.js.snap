@@ -12,7 +12,7 @@ exports[`Given a SearchButtonsContainer component When recive a component Then i
     onClick={[Function]}
   >
     <button
-      className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+      className="sc-gsDKAQ sc-eCImPb fPMSOz jLkljA"
     >
       Show Cards
     </button>
