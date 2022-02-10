@@ -27,7 +27,9 @@ const HeaderComponent = () => {
         <Link to="/mydeck">
           <Button type="wood" text="MY DECK" />
         </Link>
-        <Button type="wood" text="MAKE YOUR CARD" />
+        <Link to="/createcard">
+          <Button type="wood" text="MAKE YOUR CARD" />
+        </Link>
       </nav>
       <Burguer actionOnClick={toggleActive} isActive={isActive} />
     </Header>
