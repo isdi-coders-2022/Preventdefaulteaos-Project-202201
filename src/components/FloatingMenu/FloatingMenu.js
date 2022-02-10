@@ -22,8 +22,12 @@ const FloatingMenu = ({ isActive }) => {
       <Link to="/home">
         <Button type="wood" text="HOME" />
       </Link>
-      <Button type="wood" text="MY DECK" />
-      <Button type="wood" text="MAKE YOUR CARD" />
+      <Link to="/mydeck">
+        <Button type="wood" text="MY DECK" />
+      </Link>
+      <Link to="/createcard">
+        <Button type="wood" text="MAKE YOUR CARD" />
+      </Link>
     </Menu>
   ) : (
     ""
