@@ -8,7 +8,6 @@ const PackOpenerCardListContainer = styled.div`
   background-repeat: round;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 280px;
   height: auto;
   gap: 10px;
   margin: 10px;
