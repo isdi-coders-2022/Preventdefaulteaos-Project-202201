@@ -2,7 +2,11 @@ import Button from "../Button/Button";
 import PropTypes from "prop-types";
 import CardComponent from "../../jsStyles/CardStyles";
 import useMagicApi from "../../hooks/useMagicApi";
+
 import { useState } from "react";
+
+import CardMoreInfo from "../CardMoreInfo/CardMoreInfo";
+
 
 const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
   const { addCardsAPI } = useMagicApi();
@@ -13,6 +17,8 @@ const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
     addCardsAPI({ imageUrl, name, types, colors, rarity });
   };
 
+  const showCard = () => <CardMoreInfo />;
+
   return (
     <CardComponent className="card">
       <img src={imageUrl} alt={`${name} card`}></img>
@@ -21,13 +27,15 @@ const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
         <p className="card--type">Type: {types}</p>
         <p className="card--color">Color: {colors}</p>
         <p className="card--rarity">Rarity: {rarity}</p>
-        <Button type="onCard" text="MORE INFO" />
+
+   <Button type="onCard" text="MORE INFO" actionOnClick={showCard} />
         <Button
           className={isAdded}
           type="onCard"
           text="ADD TO DECK"
           actionOnClick={addCards}
         />
+
       </section>
     </CardComponent>
   );
