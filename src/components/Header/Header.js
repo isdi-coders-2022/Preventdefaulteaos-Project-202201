@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../../jsStyles/HeaderStyles";
 import Burguer from "../Burguer/Burguer";
 import Button from "../Button/Button";
@@ -18,7 +19,9 @@ const HeaderComponent = () => {
       </div>
       <FloatingMenu isActive={isActive} />
       <nav className="cont">
-        <Button type="wood" text="HOME" />
+        <Link to="/home">
+          <Button type="wood" text="HOME" />
+        </Link>
         <Button type="wood" text="MY DECK" />
         <Button type="wood" text="MAKE YOUR CARD" />
       </nav>
