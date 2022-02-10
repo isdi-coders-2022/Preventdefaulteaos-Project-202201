@@ -2,24 +2,25 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import BoosterCardsContextProvider from "../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../store/contexts/ResultsContextProvider";
-import MyDeck from "./MyDeckPage";
+import ResultsPage from "./ResultsPage";
 
-describe("Given a MyDeck page", () => {
+describe("Given a ResultsPage page", () => {
   describe("When its instancied", () => {
-    test("Then it should render a 'heading'", () => {
+    test("Then it should render", () => {
+      const expectedButtons = 3;
       render(
         <BrowserRouter>
           <BoosterCardsContextProvider>
             <ResultsContextProvider>
-              <MyDeck />
+              <ResultsPage />
             </ResultsContextProvider>
           </BoosterCardsContextProvider>
         </BrowserRouter>
       );
 
-      const MyDeckContainer = screen.queryByRole("heading");
+      const SearchContainer = screen.getAllByRole("button");
 
-      expect(MyDeckContainer).toBeInTheDocument();
+      expect(SearchContainer).toHaveLength(expectedButtons);
     });
   });
 });
