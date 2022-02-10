@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import "@fontsource/medievalsharp";
 
 export const ButtonGeneric = styled.button`
   border: none;
@@ -9,6 +10,8 @@ export const ButtonGeneric = styled.button`
   height: 45px;
   font-size: 16px;
   font-family: monospace;
+  cursor: pointer;
+  font-family: "MedievalSharp";
 `;
 
 export const ButtonWood = styled(ButtonGeneric)`
@@ -20,6 +23,8 @@ export const ButtonWood = styled(ButtonGeneric)`
   width: 200px;
   height: 80px;
   border: 4px solid #2c514c;
+  cursor: pointer;
+  font-family: "MedievalSharp";
 
   @media (min-width: 600px) {
     background-image: url("images/wooden-button.png");
@@ -36,6 +41,8 @@ export const ButtonOnCard = styled(ButtonGeneric)`
   color: #ffffff;
   height: 35px;
   font-size: 15px;
+  cursor: pointer;
+  font-family: "MedievalSharp";
 `;
 
 export const ButtonFilter = styled(ButtonGeneric)`
@@ -43,6 +50,8 @@ export const ButtonFilter = styled(ButtonGeneric)`
   border: 2px solid #2c514c;
   border-radius: 17px;
   margin: 5px;
+  cursor: pointer;
+  font-family: "MedievalSharp";
 `;
 
 export const ButtonCreate = styled(ButtonGeneric)`
@@ -53,4 +62,6 @@ export const ButtonCreate = styled(ButtonGeneric)`
   border-radius: 20px;
   color: #ffffff;
   font-size: 15px;
+  cursor: pointer;
+  font-family: "MedievalSharp";
 `;
