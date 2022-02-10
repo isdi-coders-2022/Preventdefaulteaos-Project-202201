@@ -1,13 +1,12 @@
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
-import propTypes from "prop-types";
 
 const CardMoreInfo = ({
-  card: { imageUrl, name, types, colors, rarity, set, number, artist },
+  infoCard: { imageUrl, name, types, colors, rarity, set, number, artist },
 }) => {
   return (
     <CardMoreInfo className="card">
-      <img src={imageUrl} alt={`${name} card`}></img>
+      {<img src={imageUrl} alt={`${name} card`}></img>}
       <section>
         <h3 className="card--name">{name}</h3>
         <p className="card--type">Type: {types}</p>
@@ -23,15 +22,15 @@ const CardMoreInfo = ({
 };
 
 CardMoreInfo.propTypes = {
-  card: PropTypes.shape({
+  infoCard: PropTypes.shape({
     imageUrl: PropTypes.string,
     name: PropTypes.string,
     types: PropTypes.array,
     colors: PropTypes.array,
     rarity: PropTypes.string,
-    set: propTypes.string,
-    number: propTypes.number,
-    artist: propTypes.array,
+    set: PropTypes.string,
+    number: PropTypes.string,
+    artist: PropTypes.string,
   }),
 };
 
