@@ -15,7 +15,9 @@ const HeaderComponent = () => {
   return (
     <Header>
       <div className="logo-container">
-        <img src="images/magic-logo.svg.png" alt="magic logo"></img>
+        <Link to="/home">
+          <img src="images/magic-logo.svg.png" alt="magic logo"></img>
+        </Link>
       </div>
       <FloatingMenu isActive={isActive} />
       <nav className="cont">
