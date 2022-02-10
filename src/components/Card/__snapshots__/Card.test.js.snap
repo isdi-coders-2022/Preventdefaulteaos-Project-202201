@@ -33,12 +33,12 @@ exports[`Given a Card component When executing the component Then it should rend
       Rare
     </p>
     <button
-      className="sc-bdvvtL sc-dkPtRN ewqzMe jGLYfy"
+      className="sc-bdvvtL sc-dkPtRN dMLkOS fSnbYK"
     >
       MORE INFO
     </button>
     <button
-      className="sc-bdvvtL sc-dkPtRN ewqzMe jGLYfy"
+      className="sc-bdvvtL sc-dkPtRN dMLkOS fSnbYK"
     >
       ADD TO DECK
     </button>
