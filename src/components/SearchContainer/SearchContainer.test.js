@@ -20,7 +20,7 @@ describe("Given a SearchContainer component", () => {
 
       const items = screen.getAllByRole("button");
 
-      expect(items).toHaveLength(3);
+      expect(items).toHaveLength(1);
     });
   });
 });
