@@ -4,6 +4,9 @@ export const H2 = styled.h2`
   color: #fff;
   margin: 0;
   font-size: 25px;
+  position: relative;
+  top: 100px;
+  z-index: -10;
 `;
 
 export const CardListComponent = styled.div`
@@ -14,4 +17,7 @@ export const CardListComponent = styled.div`
   gap: 18px;
   margin-top: 40px;
   align-items: center;
+  position: relative;
+  top: 100px;
+  z-index: -10;
 `;
