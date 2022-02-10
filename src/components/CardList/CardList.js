@@ -24,8 +24,4 @@ const CardList = () => {
   );
 };
 
-CardList.propTypes = {
-  arrayOfCards: PropTypes.array.isRequired,
-};
-
 export default CardList;
