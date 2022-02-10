@@ -7,11 +7,17 @@ exports[`Given a SearchButtonsContainer component When recive a component Then i
   <p>
     Latest expansions:
   </p>
-  <button
-    className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+  <a
+    href="/results"
+    onClick={[Function]}
   >
-    Kamigawa
-  </button>
+    <button
+      className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
+      onClick={[Function]}
+    >
+      Kamigawa
+    </button>
+  </a>
   <button
     className="sc-gsDKAQ sc-eCImPb Pia-dh kdObPa"
   >
