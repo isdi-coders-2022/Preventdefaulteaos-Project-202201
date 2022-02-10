@@ -37,7 +37,6 @@ const CardList = () => {
     card.hasOwnProperty("imageUrl")
   );
 
-
   const filterBlue = () => {
     dispatchResults(filterBlueResultsCardsAction(cardListWithImages));
   };

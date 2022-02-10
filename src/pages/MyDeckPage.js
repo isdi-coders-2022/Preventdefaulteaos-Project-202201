@@ -1,5 +1,7 @@
+import MyDeckList from "../components/MyDeck/MyDeckList";
+
 const MyDeck = () => {
-  return;
+  return <MyDeckList />;
 };
 
 export default MyDeck;

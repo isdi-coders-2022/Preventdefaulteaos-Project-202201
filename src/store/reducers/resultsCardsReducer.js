@@ -21,6 +21,17 @@ const resultsCardsReducer = (currentResultsCards, action) => {
         (card) => card.colors[0] === "Black"
       );
       break;
+    case actionsTypes.addCard:
+      newResultsCards = [...currentResultsCards, action.card];
+      break;
+    case actionsTypes.deleteCard:
+      newResultsCards = currentResultsCards.filter(
+        (card) => card.id !== action.id
+      );
+      break;
+    case actionsTypes.loadMyDeckCards:
+      newResultsCards = [...action.myDeckCards];
+      break;
     default:
       newResultsCards = [...currentResultsCards];
   }
