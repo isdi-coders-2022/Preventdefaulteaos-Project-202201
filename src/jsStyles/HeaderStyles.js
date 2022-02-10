@@ -7,6 +7,7 @@ export const Header = styled.header`
   flex-direction: row;
   height: 50px;
   justify-content: space-between;
+  box-shadow: 0 0 5px 0;
   & .logo-container {
     width: 70vw;
     position: relative;
