@@ -1,5 +1,5 @@
 import Card from "../Card/Card";
-import PropTypes from "prop-types";
+
 import CardListComponent from "../../jsStyles/CardListStyles";
 import { useContext, useEffect } from "react";
 import ResultsContext from "../../store/contexts/ResultsContext";
