@@ -6,7 +6,9 @@ export const Header = styled.header`
   width: 100vw;
   flex-direction: row;
   height: 50px;
+  position: fixed;
   justify-content: space-between;
+  box-shadow: 0 0 5px 0;
   & .logo-container {
     width: 70vw;
     position: relative;
@@ -37,10 +39,9 @@ export const Header = styled.header`
         background-position: center;
         height: 40px;
         margin: 5px;
-        background-size: cover;
+        background-size: 260px;
         background-image: url("images/wooden-button.png");
         border: none;
-        background-color: #2c514c;
       }
     }
   }

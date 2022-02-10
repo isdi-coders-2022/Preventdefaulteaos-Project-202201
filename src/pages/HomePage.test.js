@@ -36,7 +36,7 @@ describe("Given a HomePage", () => {
 
       const items = screen.getAllByRole("button");
 
-      expect(items).toHaveLength(4);
+      expect(items).toHaveLength(2);
     });
   });
 });

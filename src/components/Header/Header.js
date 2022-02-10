@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Header } from "../../jsStyles/HeaderStyles";
-import BurgerComponent from "../Burguer/BurguerComponent";
+import Burguer from "../Burguer/Burguer";
 import Button from "../Button/Button";
 import FloatingMenu from "../FloatingMenu/FloatingMenu";
 
@@ -18,11 +19,13 @@ const HeaderComponent = () => {
       </div>
       <FloatingMenu isActive={isActive} />
       <nav className="cont">
-        <Button type="wood" text="HOME" />
+        <Link to="/home">
+          <Button type="wood" text="HOME" />
+        </Link>
         <Button type="wood" text="MY DECK" />
         <Button type="wood" text="MAKE YOUR CARD" />
       </nav>
-      <BurgerComponent actionOnClick={toggleActive} isActive={isActive} />
+      <Burguer actionOnClick={toggleActive} isActive={isActive} />
     </Header>
   );
 };

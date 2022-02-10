@@ -1,17 +1,23 @@
 import styled from "styled-components";
 
-const CardListComponent = styled.div`
+export const H2 = styled.h2`
+  color: #fff;
+  margin: 0;
+  font-size: 25px;
+  position: relative;
+  top: 100px;
+  z-index: -10;
+`;
+
+export const CardListComponent = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 18px;
   margin-top: 40px;
   align-items: center;
-
-  & h2 {
-    color: #fff;
-    margin: 0;
-    font-size: 25px;
-  }
+  position: relative;
+  top: 100px;
+  z-index: -10;
 `;
-
-export default CardListComponent;
