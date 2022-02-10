@@ -9,6 +9,7 @@ const resultsCardsReducer = (currentResultsCards, action) => {
     default:
       newResultsCards = [...currentResultsCards];
   }
+
   return newResultsCards;
 };
 
