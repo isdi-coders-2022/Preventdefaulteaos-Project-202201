@@ -38,7 +38,7 @@ const PackOpenerContainer = () => {
         </DivButton>
         <OpenPackButtonContainerImage src="images/OpenPackButtonContainer-background.png"></OpenPackButtonContainerImage>
       </OpenPackButtonContainer>
-      <PackOpenerCardList arrayOfCards={boosterCards} />;
+      <PackOpenerCardList arrayOfCards={boosterCards} />
     </>
   );
 };

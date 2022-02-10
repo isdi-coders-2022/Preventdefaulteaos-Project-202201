@@ -34,6 +34,8 @@ describe("Given a Header component", () => {
     });
 
     test("Then it should render the navigation bar", () => {
+      const text = "HOME";
+      
       render(
         <BoosterCardsContextProvider>
           <ResultsContextProvider>
@@ -42,7 +44,7 @@ describe("Given a Header component", () => {
         </BoosterCardsContextProvider>
       );
 
-      const headerRender = screen.getByRole("navigation");
+      const headerRender = screen.getByText(text);
 
       expect(headerRender).toBeInTheDocument();
     });
