@@ -36,7 +36,10 @@ const PackOpenerContainer = () => {
             actionOnClick={loadBoosterCards}
           />
         </DivButton>
-        <OpenPackButtonContainerImage src="images/OpenPackButtonContainer-background.png"></OpenPackButtonContainerImage>
+        <OpenPackButtonContainerImage
+          alt=""
+          src="images/OpenPackButtonContainer-background.png"
+        ></OpenPackButtonContainerImage>
       </OpenPackButtonContainer>
       <PackOpenerCardList arrayOfCards={boosterCards} />
     </>
