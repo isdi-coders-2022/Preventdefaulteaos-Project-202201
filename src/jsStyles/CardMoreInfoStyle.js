@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const CardMoreInfoComponent = styled.div`
+const CardMoreInfo = styled.div`
   display: flex;
   gap: 15px;
   align-items: center;
@@ -39,4 +39,4 @@ const CardMoreInfoComponent = styled.div`
   }
 `;
 
-export default CardMoreInfoComponent;
+export default CardMoreInfo;
