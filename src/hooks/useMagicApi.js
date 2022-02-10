@@ -21,8 +21,9 @@ const useMagicApi = () => {
 
   const loadResultsCardsAPI = async () => {
     const response = await fetch(apiGetResultsCardsURL);
-    const boosterCards = await response.json();
-    dispatchResults(loadResultsCardsAction(boosterCards));
+    const resultsCards = await response.json();
+
+    dispatchResults(loadResultsCardsAction(resultsCards));
   };
 
   return { loadBoosterCardsAPI, loadResultsCardsAPI };
