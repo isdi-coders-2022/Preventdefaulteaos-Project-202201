@@ -6,7 +6,7 @@ import useMagicApi from "../../hooks/useMagicApi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import CardMoreInfo from "../CardMoreInfo/CardMoreInfo";
+
 const Card = ({ card: { imageUrl, name, types, colors, rarity, id } }) => {
 
 
