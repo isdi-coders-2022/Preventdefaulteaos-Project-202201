@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../Button/Button";
 
@@ -18,7 +19,9 @@ const Menu = styled.div`
 const FloatingMenu = ({ isActive }) => {
   return isActive ? (
     <Menu>
-      <Button type="wood" text="HOME" />
+      <Link to="/home">
+        <Button type="wood" text="HOME" />
+      </Link>
       <Button type="wood" text="MY DECK" />
       <Button type="wood" text="MAKE YOUR CARD" />
     </Menu>
