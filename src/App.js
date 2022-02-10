@@ -6,7 +6,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import ResultsPage from "./pages/ResultsPage";
 import MyDeck from "./pages/MyDeckPage";
 import CreateCardPage from "./pages/CreateCardPage";
-import MoreInfoPage from "./pages/MoreInfo";
+import MoreInfoPage from "./pages/MoreInfoPage";
 
 function App() {
   return (
