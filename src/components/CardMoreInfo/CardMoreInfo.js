@@ -5,7 +5,7 @@ const CardMoreInfo = ({
   infoCard: { imageUrl, name, types, colors, rarity, set, number, artist },
 }) => {
   return (
-    <CardMoreInfo className="card">
+    <div className="card">
       {<img src={imageUrl} alt={`${name} card`}></img>}
       <section>
         <h3 className="card--name">{name}</h3>
@@ -17,7 +17,7 @@ const CardMoreInfo = ({
         <p className="card--artist">Artist: {artist}</p>
         <Button type="onCard" text="ADD TO DECK" />
       </section>
-    </CardMoreInfo>
+    </div>
   );
 };
 
