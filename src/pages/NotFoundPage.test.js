@@ -2,25 +2,26 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import BoosterCardsContextProvider from "../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../store/contexts/ResultsContextProvider";
-import ResultsPage from "./ResultsPage";
+import NotFoundPage from "./NotFoundPage";
 
-describe("Given a ResultsPage page", () => {
+describe("Given a NotFoundPage page", () => {
   describe("When its instancied", () => {
-    test("Then it should render 3 buttons", () => {
-      const expectedButtons = 3;
+    test("Then it should render 'Not Found'", () => {
+      const expectedText = "Not Found";
+
       render(
         <BrowserRouter>
           <BoosterCardsContextProvider>
             <ResultsContextProvider>
-              <ResultsPage />
+              <NotFoundPage />
             </ResultsContextProvider>
           </BoosterCardsContextProvider>
         </BrowserRouter>
       );
 
-      const SearchContainer = screen.getAllByRole("button");
+      const MyDeckContainer = screen.getByText(expectedText);
 
-      expect(SearchContainer).toHaveLength(expectedButtons);
+      expect(MyDeckContainer).toBeInTheDocument();
     });
   });
 });
