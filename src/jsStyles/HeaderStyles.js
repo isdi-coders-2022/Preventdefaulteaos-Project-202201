@@ -42,7 +42,6 @@ export const Header = styled.header`
         background-size: 260px;
         background-image: url("images/wooden-button.png");
         border: none;
-        background-color: red;
       }
     }
   }
