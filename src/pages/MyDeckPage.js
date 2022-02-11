@@ -1,4 +1,4 @@
-import MyDeckList from "../components/MyDeck/MyDeckList";
+import MyDeckList from "../components/MyDeckList/MyDeckList";
 
 const MyDeck = () => {
   return <MyDeckList />;

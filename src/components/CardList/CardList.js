@@ -37,6 +37,11 @@ const CardList = () => {
     card.hasOwnProperty("imageUrl")
   );
 
+  const Cards = cardListWithImages.map((card) => ({
+    ...card,
+    imageUrl: card.imageUrl.replace("http", "https"),
+  }));
+
   const filterBlue = () => {
     dispatchResults(filterBlueResultsCardsAction(cardListWithImages));
   };
@@ -71,7 +76,7 @@ const CardList = () => {
         ></Button>
       </ButtonContainer>
       <CardListComponent>
-        {cardListWithImages.map((card) => (
+        {Cards.map((card) => (
           <Card key={card.id} card={card} />
         ))}
       </CardListComponent>

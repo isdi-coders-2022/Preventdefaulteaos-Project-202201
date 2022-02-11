@@ -9,7 +9,7 @@ export const handlers = [
         ctx.json([
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -18,7 +18,7 @@ export const handlers = [
           },
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -37,7 +37,7 @@ export const handlers = [
         ctx.json([
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -46,7 +46,7 @@ export const handlers = [
           },
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -65,7 +65,7 @@ export const handlers = [
         ctx.json([
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -74,7 +74,7 @@ export const handlers = [
           },
           {
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=457147&type=card",
             name: "Archway Angel",
             types: ["Creature"],
             colors: ["White"],
@@ -111,7 +111,7 @@ export const handlers = [
               layout: "normal",
               multiverseid: "386635",
               imageUrl:
-                "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386635&type=card",
+                "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386635&type=card",
               watermark: "abzan",
               rulings: [
                 {
@@ -127,7 +127,7 @@ export const handlers = [
                   flavor:
                     "Vorfahren der Abzan starben, um ihre Häuser zu beschützen, und sie beschützen sie immer noch.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387442&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387442&type=card",
                   language: "German",
                   multiverseid: 387442,
                 },
@@ -138,7 +138,7 @@ export const handlers = [
                   flavor:
                     "Los ancestros abzanos dieron su vida por proteger sus dinastías y, aun hoy, siguen protegiéndolas.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389325&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389325&type=card",
                   language: "Spanish",
                   multiverseid: 389325,
                 },
@@ -149,7 +149,7 @@ export const handlers = [
                   flavor:
                     "Les ancêtres abzans périrent pour protéger leurs Maisons, et ils les protègent encore.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387711&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387711&type=card",
                   language: "French",
                   multiverseid: 387711,
                 },
@@ -160,7 +160,7 @@ export const handlers = [
                   flavor:
                     "Gli antenati degli Abzan sono morti per proteggere le proprie Casate e continuano a farlo tuttora.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387980&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387980&type=card",
                   language: "Italian",
                   multiverseid: 387980,
                 },
@@ -171,7 +171,7 @@ export const handlers = [
                   flavor:
                     "アブザンの先祖たちはアブザン家を守るために命を落とし、そして今もなお一家を守っている。",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388249&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388249&type=card",
                   language: "Japanese",
                   multiverseid: 388249,
                 },
@@ -182,7 +182,7 @@ export const handlers = [
                   flavor:
                     "일족을 지키고자 목숨을 바친 아브잔의 조상들은 여전히 그 임무를 다하고 있다.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388518&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388518&type=card",
                   language: "Korean",
                   multiverseid: 388518,
                 },
@@ -193,7 +193,7 @@ export const handlers = [
                   flavor:
                     "Os ancestrais Abzan morreram para proteger as Dinastias. Eles ainda as protegem.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388787&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=388787&type=card",
                   language: "Portuguese (Brazil)",
                   multiverseid: 388787,
                 },
@@ -204,7 +204,7 @@ export const handlers = [
                   flavor:
                     "Предки абзанов погибли, защищая свои Семьи, и защищают их поныне.",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389056&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389056&type=card",
                   language: "Russian",
                   multiverseid: 389056,
                 },
@@ -214,7 +214,7 @@ export const handlers = [
                   type: "结界",
                   flavor: "阿布赞祖灵因卫护眷族而捐躯，死后仍尽效保护之责。",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386904&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386904&type=card",
                   language: "Chinese Simplified",
                   multiverseid: 386904,
                 },
@@ -224,7 +224,7 @@ export const handlers = [
                   type: "結界",
                   flavor: "阿布贊祖靈因衛護眷族而捐軀，死後仍盡效保護之責。",
                   imageUrl:
-                    "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387173&type=card",
+                    "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=387173&type=card",
                   language: "Chinese Traditional",
                   multiverseid: 387173,
                 },
@@ -296,7 +296,7 @@ export const handlers = [
             layout: "normal",
             multiverseid: "97051",
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
             printings: ["MMQ", "PMMQ", "PRM"],
             originalText:
               "o3oU, ocT, Discard a card from your hand: Untap target creature and gain control of it until end of turn. That creature gains haste until end of turn. (It may attack and ocT the turn it comes under your control.)",
