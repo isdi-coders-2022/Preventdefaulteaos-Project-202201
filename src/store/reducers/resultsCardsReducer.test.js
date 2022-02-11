@@ -1,3 +1,5 @@
+import actionsTypes from "../actions/ResultsCards/actionsTypes";
+
 import resultsCardsReducer from "./resultsCardsReducer";
 
 describe("Given a resultsCardsReducer component", () => {
@@ -224,7 +226,7 @@ describe("Given a resultsCardsReducer component", () => {
 
       const action = {
         type: actionsTypes.loadMyDeckCards,
-        myDeckCards: twoCardsArray,
+        myDeckCards: twoCardsArray.cards,
       };
 
       const newArrayOfCards = resultsCardsReducer(currentState, action);
