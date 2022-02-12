@@ -1,6 +1,6 @@
 import { SearchContainerStyle } from "../../jsStyles/SearchContainer";
 import SearchBar from "../SearchBar/SearchBar";
-import SearchButtonsContainer from "../SearchButtonContainer/SearchButtonContainer";
+import SearchButtonsContainer from "../SearchButtonsContainer/SearchButtonsContainer";
 
 const SearchContainer = () => {
   return (

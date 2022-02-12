@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
-import HeaderComponent from "./Header";
+import HeaderComponent from "./HeaderComponent";
 
 describe("Given a Header component", () => {
   describe("When it's instanciated", () => {

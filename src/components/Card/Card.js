@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import PropTypes from "prop-types";
-import CardComponent from "../../jsStyles/CardStyles";
+import CardComponent from "../../jsStyles/CardComponent";
 import useMagicApi from "../../hooks/useMagicApi";
 
 import { useState } from "react";
