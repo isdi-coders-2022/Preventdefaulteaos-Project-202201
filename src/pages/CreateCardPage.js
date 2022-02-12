@@ -1,5 +1,7 @@
+import CreateCardForm from "../components/CreateCardForm/CreateCardForm";
+
 const CreateCardPage = () => {
-  return <h2>Homepage</h2>;
+  return <CreateCardForm />;
 };
 
 export default CreateCardPage;
