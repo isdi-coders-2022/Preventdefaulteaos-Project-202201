@@ -19,7 +19,7 @@ function App() {
         <Route path="/mydeck" element={<MyDeck />} />
         <Route path="/createcard" element={<CreateCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="/moreinfo" element={<MoreInfoPage />} />
+        <Route path="/moreinfo/:cardID" element={<MoreInfoPage />} />
       </Routes>
     </>
   );
