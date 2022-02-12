@@ -32,13 +32,16 @@ const useMagicApi = () => {
   }, [apiGetResultsCardsURL, dispatchResults]);
 
   const addCardsAPI = async (card) => {
-    console.log(card);
+    const cardHTTP = {
+      ...card,
+      imageUrl: card.imageUrl.replace("https", "http"),
+    };
     const response = await fetch(localApiURL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(card),
+      body: JSON.stringify(cardHTTP),
     });
     const newCard = await response.json();
     dispatchResults(addCardAction(newCard));
