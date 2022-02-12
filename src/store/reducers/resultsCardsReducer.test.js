@@ -1,5 +1,4 @@
 import actionsTypes from "../actions/ResultsCards/actionTypes";
-import userEvents from "@testing-library/user-event";
 
 import resultsCardsReducer from "./resultsCardsReducer";
 
