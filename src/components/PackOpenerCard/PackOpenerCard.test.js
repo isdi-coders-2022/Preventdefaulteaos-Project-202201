@@ -7,7 +7,7 @@ describe("Given a PackOpenerCard component", () => {
       const card = {
         name: "Overtaker",
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
       };
 
       render(<PackOpenerCard card={card} />);
