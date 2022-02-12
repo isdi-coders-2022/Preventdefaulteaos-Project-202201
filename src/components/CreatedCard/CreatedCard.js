@@ -12,7 +12,7 @@ import {
 const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
   const { deleteCardAPI } = useMagicApi();
 
-  const cardColor = color.toLowerCase();
+  const cardColor = color ? color.toLowerCase() : null;
   const deleteCreatedCard = () => {
     deleteCardAPI(id);
   };
