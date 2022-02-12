@@ -7,19 +7,17 @@ import CardMoreInfo from "./CardMoreInfo";
 describe("Given a CardMoreInfo component", () => {
   describe("When it is rendered with a card", () => {
     test("Then it should show the image of the card with the alt name on it", () => {
-      const card = { name: "mario" };
-
       render(
         <BrowserRouter>
           <ResultsContextProvider>
             <BoosterCardsContextProvider>
-              <CardMoreInfo infoCard={card} />
+              <CardMoreInfo infoCard={{}} />
             </BoosterCardsContextProvider>
           </ResultsContextProvider>
         </BrowserRouter>
       );
 
-      const expectedImageText = screen.getByRole("img", { alt: card.name });
+      const expectedImageText = screen.getByRole("img");
 
       expect(expectedImageText).toBeInTheDocument();
     });

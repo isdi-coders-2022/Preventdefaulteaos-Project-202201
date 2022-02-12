@@ -26,6 +26,11 @@ const PackOpenerContainer = () => {
     loadBoosterCardsAPI();
   };
 
+  const boosterCardsHTTPS = boosterCards.map((card) => ({
+    ...card,
+    imageUrl: card.imageUrl.replace("http", "https"),
+  }));
+
   return (
     <>
       <OpenPackButtonContainer>
@@ -41,7 +46,7 @@ const PackOpenerContainer = () => {
           src="images/OpenPackButtonContainer-background.png"
         ></OpenPackButtonContainerImage>
       </OpenPackButtonContainer>
-      <PackOpenerCardList arrayOfCards={boosterCards} />
+      <PackOpenerCardList arrayOfCards={boosterCardsHTTPS} />
     </>
   );
 };
