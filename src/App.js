@@ -1,4 +1,4 @@
-import HeaderComponent from "./components/Header/Header";
+import HeaderComponent from "./components/HeaderComponent/HeaderComponent";
 
 import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
