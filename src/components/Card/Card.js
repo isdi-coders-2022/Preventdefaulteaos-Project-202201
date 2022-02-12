@@ -6,18 +6,11 @@ import useMagicApi from "../../hooks/useMagicApi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-
-
 const Card = ({ card: { imageUrl, name, types, colors, rarity, id } }) => {
-
-
-
-
 
 
   const { addCardsAPI } = useMagicApi();
   const [isAdded, setIsAdded] = useState("");
-
   const addCards = () => {
     setIsAdded("added");
     addCardsAPI({ imageUrl, name, types, colors, rarity });
