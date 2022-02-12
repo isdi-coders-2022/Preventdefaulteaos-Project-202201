@@ -78,8 +78,10 @@ const CreateCardForm = () => {
   const blankFields = {
     name: "",
     type: "",
-    picture: "",
+    imageUrl: "",
     text: "",
+    created: "yes",
+    color: "",
   };
 
   const [formData, setFormData] = useState(blankFields);
@@ -105,7 +107,7 @@ const CreateCardForm = () => {
     formData.name !== "" &&
     formData.type !== "" &&
     formData.color !== "" &&
-    formData.picture !== "" &&
+    formData.imageUrl !== "" &&
     formData.text !== "";
   return (
     <>
@@ -136,7 +138,7 @@ const CreateCardForm = () => {
                   onChange={changeData}
                 />
               </div>
-              <div className="form-group">
+              {/* <div className="form-group">
                 <select value={formData.color} onChange={changeData} required>
                   <option value="Red">Red</option>
                   <option value="Blue">Blue</option>
@@ -144,15 +146,26 @@ const CreateCardForm = () => {
                   <option value="Black">Black</option>
                   <option value="White">White</option>
                 </select>
+              </div> */}
+              <div className="form-group">
+                <label htmlFor="color"> </label>
+                <input
+                  type="text"
+                  id="color"
+                  className="form-input"
+                  placeholder="Color:"
+                  value={formData.color}
+                  onChange={changeData}
+                />
               </div>
               <div className="form-group">
-                <label htmlFor="picture"> </label>
+                <label htmlFor="imageUrl"> </label>
                 <input
                   type="url"
-                  id="picture"
+                  id="imageUrl"
                   className="form-input"
                   placeholder="Picture url:"
-                  value={formData.picture}
+                  value={formData.imageUrl}
                   onChange={changeData}
                 />
               </div>
@@ -173,7 +186,6 @@ const CreateCardForm = () => {
               <button type="submit" disabled={!isFilled}>
                 Create
               </button>
-              {console.log(formData)}
             </form>
           </FormContainer>
           <ParagraphContainer>

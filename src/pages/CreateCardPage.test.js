@@ -17,7 +17,7 @@ describe("Given a CreateCardPage page", () => {
         </BrowserRouter>
       );
 
-      const createCardPageContainer = screen.queryByRole("heading");
+      const createCardPageContainer = screen.getByRole("heading", { level: 1 });
 
       expect(createCardPageContainer).toBeInTheDocument();
     });

@@ -1,10 +1,10 @@
 import { H2, CardListComponent } from "../../jsStyles/CardListStyles";
-import { useContext, useEffect } from "react";
-
-import useMagicApi from "../../hooks/useMagicApi";
 
 import styled from "styled-components";
-import MyDeckCard from "../MyDeckCard/MyDeckCard";
+
+import CreatedCard from "../CreatedCard/CreatedCard";
+import fakedata from "../../fakedata/fakedata";
+import { useContext } from "react";
 import ResultsContext from "../../store/contexts/ResultsContext";
 
 const HeaderContainer = styled.div`
@@ -14,13 +14,10 @@ const HeaderContainer = styled.div`
   margin-top: 40px;
 `;
 const CreatedCardList = () => {
-  const { loadCreatedCardsAPI } = useMagicApi();
   const { resultsCards } = useContext(ResultsContext);
-
-  useEffect(() => {
-    loadCreatedCardsAPI();
-  }, [loadCreatedCardsAPI]);
-
+  const resultsCardsCreated = resultsCards.filter((card) =>
+    card.hasOwnProperty("created")
+  );
   return (
     <>
       <HeaderContainer>
@@ -28,8 +25,8 @@ const CreatedCardList = () => {
       </HeaderContainer>
 
       <CardListComponent>
-        {resultsCards.map((card) => (
-          <MyDeckCard key={card.id} card={card} />
+        {resultsCardsCreated.map((card) => (
+          <CreatedCard key={card.id} card={card} />
         ))}
       </CardListComponent>
     </>
