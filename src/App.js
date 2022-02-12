@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import ResultsPage from "./pages/ResultsPage";
-import MyDeck from "./pages/MyDeckPage";
+import MyDeck from "./pages/MyDeck";
 import CreateCardPage from "./pages/CreateCardPage";
 import MoreInfoPage from "./pages/MoreInfoPage";
 

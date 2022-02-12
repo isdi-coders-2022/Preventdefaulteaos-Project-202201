@@ -1,4 +1,4 @@
-import actionsTypes from "../actions/ResultsCards/actionTypes";
+import actionsTypes from "../actions/ResultsCards/actionsTypes";
 
 import resultsCardsReducer from "./resultsCardsReducer";
 

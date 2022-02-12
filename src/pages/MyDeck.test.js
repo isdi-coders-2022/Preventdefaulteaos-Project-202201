@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
 import BoosterCardsContextProvider from "../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../store/contexts/ResultsContextProvider";
-import MyDeck from "./MyDeckPage";
+import MyDeck from "./MyDeck";
 
 describe("Given a MyDeck page", () => {
   describe("When its instancied", () => {
