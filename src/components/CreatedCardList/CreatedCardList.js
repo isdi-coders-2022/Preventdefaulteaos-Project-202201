@@ -1,11 +1,12 @@
 import { H2, CardListComponent } from "../../jsStyles/CardListStyles";
-import { useContext, useEffect } from "react";
-
-import useMagicApi from "../../hooks/useMagicApi";
 
 import styled from "styled-components";
-import MyDeckCard from "../MyDeckCard/MyDeckCard";
+
+import CreatedCard from "../CreatedCard/CreatedCard";
+
+import { useContext, useEffect } from "react";
 import ResultsContext from "../../store/contexts/ResultsContext";
+import useMagicApi from "../../hooks/useMagicApi";
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -13,31 +14,31 @@ const HeaderContainer = styled.div`
   justify-content: space-around;
   margin-top: 40px;
 `;
-
-const MyDeckList = () => {
-  const { loadMyDeckCardsAPI } = useMagicApi();
+const CreatedCardList = () => {
   const { resultsCards } = useContext(ResultsContext);
+  const { loadMyDeckCardsAPI } = useMagicApi();
 
   useEffect(() => {
     loadMyDeckCardsAPI();
   }, [loadMyDeckCardsAPI]);
 
-  const resultsCardsNotCreated = resultsCards.filter(
-    (card) => !card.hasOwnProperty("created")
+  const resultsCardsCreated = resultsCards.filter((card) =>
+    card.hasOwnProperty("created")
   );
+
   return (
     <>
       <HeaderContainer>
-        <H2>MY DECK:</H2>
+        <H2>CREATED CARDS:</H2>
       </HeaderContainer>
 
       <CardListComponent>
-        {resultsCardsNotCreated.map((card) => (
-          <MyDeckCard key={card.id} card={card} />
+        {resultsCardsCreated.map((card) => (
+          <CreatedCard key={card.id} card={card} />
         ))}
       </CardListComponent>
     </>
   );
 };
 
-export default MyDeckList;
+export default CreatedCardList;
