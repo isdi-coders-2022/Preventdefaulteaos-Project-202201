@@ -13,13 +13,13 @@ describe("Given a resultsCardsReducer component", () => {
             id: 1,
             name: "Overtaker",
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
           },
           {
             id: 2,
             name: "Heart-Piercer Bow",
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
           },
         ],
       };
@@ -29,13 +29,13 @@ describe("Given a resultsCardsReducer component", () => {
           id: 1,
           name: "Overtaker",
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
         {
           id: 2,
           name: "Heart-Piercer Bow",
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
         },
       ];
 
@@ -60,7 +60,7 @@ describe("Given a resultsCardsReducer component", () => {
           name: "Overtaker",
           colors: ["red"],
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
         {
           id: 2,
@@ -68,7 +68,7 @@ describe("Given a resultsCardsReducer component", () => {
           colors: ["Blue"],
 
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
         },
       ];
 
@@ -92,7 +92,7 @@ describe("Given a resultsCardsReducer component", () => {
           name: "Overtaker",
           colors: ["White"],
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
         {
           id: 2,
@@ -100,7 +100,7 @@ describe("Given a resultsCardsReducer component", () => {
           colors: ["Blue"],
 
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
         },
       ];
 
@@ -124,7 +124,7 @@ describe("Given a resultsCardsReducer component", () => {
           name: "Overtaker",
           colors: ["Black"],
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
         {
           id: 2,
@@ -132,7 +132,7 @@ describe("Given a resultsCardsReducer component", () => {
           colors: ["Blue"],
 
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
         },
       ];
 
@@ -155,7 +155,7 @@ describe("Given a resultsCardsReducer component", () => {
         name: "Overtaker",
         colors: ["White"],
         imageUrl:
-          "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+          "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
       };
 
       const action = {
@@ -176,7 +176,7 @@ describe("Given a resultsCardsReducer component", () => {
           name: "Overtaker",
           colors: ["White"],
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
       ];
 
@@ -199,13 +199,13 @@ describe("Given a resultsCardsReducer component", () => {
             id: 1,
             name: "Overtaker",
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
           },
           {
             id: 2,
             name: "Heart-Piercer Bow",
             imageUrl:
-              "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+              "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
           },
         ],
       };
@@ -215,13 +215,13 @@ describe("Given a resultsCardsReducer component", () => {
           id: 1,
           name: "Overtaker",
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
         },
         {
           id: 2,
           name: "Heart-Piercer Bow",
           imageUrl:
-            "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
         },
       ];
 
