@@ -270,7 +270,7 @@ export const handlers = [
       );
     }
   ),
-  rest.get("httpss://api.magicthegathering.io/v1/cards", (req, res, ctx) => {
+  rest.get("https://api.magicthegathering.io/v1/cards", (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({
