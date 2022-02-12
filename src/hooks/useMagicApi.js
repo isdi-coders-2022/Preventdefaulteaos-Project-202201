@@ -32,6 +32,7 @@ const useMagicApi = () => {
   }, [apiGetResultsCardsURL, dispatchResults]);
 
   const addCardsAPI = async (card) => {
+    console.log(card);
     const response = await fetch(localApiURL, {
       method: "POST",
       headers: {

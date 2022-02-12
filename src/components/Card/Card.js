@@ -7,11 +7,9 @@ import { useState } from "react";
 
 import CardMoreInfo from "../CardMoreInfo/CardMoreInfo";
 
-
 const Card = ({ card: { imageUrl, name, types, colors, rarity } }) => {
   const { addCardsAPI } = useMagicApi();
   const [isAdded, setIsAdded] = useState("");
-
   const addCards = () => {
     setIsAdded("added");
     addCardsAPI({ imageUrl, name, types, colors, rarity });
