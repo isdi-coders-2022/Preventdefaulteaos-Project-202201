@@ -85,7 +85,7 @@ export const handlers = [
       );
     }
   ),
-  rest.get(process.env.REACT_APP_URLAPI, (req, res, ctx) => {
+  rest.get(`${process.env.REACT_APP_URLAPI}`, (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json({

@@ -2,7 +2,6 @@ import { render, screen, waitFor } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
 import userEvent from "@testing-library/user-event";
-
 import PackOpenerContainer from "./PackOpenerContainer";
 
 jest.setTimeout(1000 * 15);
@@ -13,7 +12,7 @@ describe("Given a PackOpenerContainer component", () => {
         <>
           <BoosterCardsContextProvider>
             <ResultsContextProvider>
-              <PackOpenerContainer />{" "}
+              <PackOpenerContainer />
             </ResultsContextProvider>
           </BoosterCardsContextProvider>
         </>
