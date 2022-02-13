@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
 import EditCreatedCard from "./EditCreatedCard";
-import { useParams, BrowserRouter } from "react-router-dom";
 
 describe("Given a EditCreatedCard component", () => {
   describe("When it is rendered", () => {

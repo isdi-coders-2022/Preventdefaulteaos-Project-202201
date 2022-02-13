@@ -30,7 +30,7 @@ export const handlers = [
     }
   ),
   rest.post(
-    "httpss://magic-world-api.herokuapp.com/magicWorld/",
+    "https://magic-world-api.herokuapp.com/magicWorld/",
     (req, res, ctx) => {
       return res(
         ctx.status(200),
@@ -58,7 +58,7 @@ export const handlers = [
     }
   ),
   rest.delete(
-    "httpss://magic-world-api.herokuapp.com/magicWorld/",
+    "https://magic-world-api.herokuapp.com/magicWorld/",
     (req, res, ctx) => {
       return res(
         ctx.status(200),
@@ -86,7 +86,7 @@ export const handlers = [
     }
   ),
   rest.get(
-    "httpss://api.magicthegathering.io/v1/sets/ktk/booster",
+    "https://api.magicthegathering.io/v1/sets/ktk/booster",
     (req, res, ctx) => {
       return res(
         ctx.status(200),
