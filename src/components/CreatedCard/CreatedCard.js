@@ -21,7 +21,7 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
   return (
     <>
       {cardColor === "red" && (
-        <CreatedCardComponentRed>
+        <CreatedCardComponentRed className="red">
           <img
             src={imageUrl}
             alt={`${name} card`}
