@@ -12,8 +12,20 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 40px;
+  margin-top: 20px;
+  & h2 {
+    color: #fab827;
+  }
+  @media (min-width: 600px) {
+    margin-top: -50px;
+  }
 `;
+
+const BlankDiv = styled.div`
+  height: 40px;
+  width: 20px;
+`;
+
 const CreatedCardList = () => {
   const { resultsCards } = useContext(ResultsContext);
   const { loadMyDeckCardsAPI } = useMagicApi();
