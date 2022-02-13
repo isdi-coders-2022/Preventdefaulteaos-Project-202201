@@ -31,6 +31,8 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
+            <Button className="edit" type="onCard" text="EDIT" />
+
             <Button
               type="onCard"
               text="DELETE"
@@ -51,6 +53,8 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
+            <Button className="edit" type="onCard" text="EDIT" />
+
             <Button
               type="onCard"
               text="DELETE"
@@ -71,6 +75,7 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
+            <Button className="edit" type="onCard" text="EDIT" />
             <Button
               type="onCard"
               text="DELETE"
@@ -91,6 +96,8 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
+            <Button className="edit" type="onCard" text="EDIT" />
+
             <Button
               type="onCard"
               text="DELETE"
@@ -111,6 +118,8 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
+            <Button className="edit" type="onCard" text="EDIT" />
+
             <Button
               type="onCard"
               text="DELETE"

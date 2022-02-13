@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import useMagicApi from "../../hooks/useMagicApi";
+import CreatedCard from "../CreatedCard/CreatedCard";
 
 const FormPageItemContainer = styled.div`
   display: flex;
@@ -208,12 +209,7 @@ const EditCreatedCard = () => {
               </button>
             </form>
           </FormContainer>
-          <ParagraphContainer>
-            <p>
-              Enter your information and create your own personal card to play
-              with!
-            </p>
-          </ParagraphContainer>
+          <ParagraphContainer></ParagraphContainer>
         </FormAndInfoContainer>
       </FormPageItemContainer>
     </>
