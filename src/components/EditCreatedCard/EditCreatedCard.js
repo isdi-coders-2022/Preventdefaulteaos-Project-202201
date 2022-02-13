@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import useMagicApi from "../../hooks/useMagicApi";
-import CreatedCard from "../CreatedCard/CreatedCard";
+import ResultsContext from "../../store/contexts/ResultsContext";
+import CardToEdit from "../CardToEdit/CardToEdit";
 
 const FormPageItemContainer = styled.div`
   display: flex;
@@ -29,27 +31,22 @@ const FormAndInfoContainer = styled.div`
     flex-direction: row;
   }
 `;
-
-const ParagraphContainer = styled.div`
+const CardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 300px;
-  width: 300px;
-  border: 10px solid #000;
-  padding: 10px;
+  width: 200px;
   order: 1;
-  margin-bottom: 10px;
+  margin-top: 200px;
   @media (min-width: 600px) {
+    margin-top: 0px;
+
     order: 2;
   }
-
-  & p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-  }
 `;
+
 const FormContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -96,6 +93,14 @@ const FormContainer = styled.div`
 `;
 
 const EditCreatedCard = () => {
+  let { id } = useParams();
+  const { loadCreatedCardToEditAPI } = useMagicApi();
+  const { cardToEditInfo } = useContext(ResultsContext);
+
+  useEffect(() => {
+    loadCreatedCardToEditAPI(id);
+  }, [loadCreatedCardToEditAPI, id]);
+
   const blankFields = {
     name: "",
     type: "",
@@ -103,11 +108,12 @@ const EditCreatedCard = () => {
     text: "",
     created: "yes",
     color: "",
+    id: id,
   };
 
   const [formData, setFormData] = useState(blankFields);
 
-  const { addCardsAPI } = useMagicApi();
+  const { editCreatedCardAPI } = useMagicApi();
 
   const resetForm = () => {
     setFormData(blankFields);
@@ -115,7 +121,7 @@ const EditCreatedCard = () => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    addCardsAPI(formData);
+    editCreatedCardAPI(formData);
     resetForm();
   };
   const changeData = (event) => {
@@ -133,7 +139,7 @@ const EditCreatedCard = () => {
   return (
     <>
       <FormPageItemContainer>
-        <h1>CREATE YOUR CARD:</h1>
+        <h1>EDIT YOUR CARD:</h1>
         <FormAndInfoContainer>
           <FormContainer>
             <form onSubmit={onFormSubmit} autoComplete="off" noValidate>
@@ -205,11 +211,13 @@ const EditCreatedCard = () => {
                 />
               </div>
               <button type="submit" disabled={!isFilled}>
-                Create
+                EDIT
               </button>
             </form>
           </FormContainer>
-          <ParagraphContainer></ParagraphContainer>
+          <CardContainer>
+            <CardToEdit card={cardToEditInfo} />
+          </CardContainer>
         </FormAndInfoContainer>
       </FormPageItemContainer>
     </>
