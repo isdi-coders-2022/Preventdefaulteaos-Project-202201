@@ -67,4 +67,24 @@ describe("Given a boosterCardsReducer component", () => {
       expect(newArrayOfCards).toEqual([]);
     });
   });
+  describe("When it is instantiated with and incorrect action", () => {
+    test("Then it should render that same card as the currentState", () => {
+      const currentState = [
+        {
+          id: 1,
+          name: "Overtaker",
+          imageUrl:
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+        },
+      ];
+
+      const action = {
+        type: "error",
+      };
+
+      const expectedErrorCard = boosterCardsReducer(currentState, action);
+
+      expect(expectedErrorCard).toEqual(currentState);
+    });
+  });
 });
