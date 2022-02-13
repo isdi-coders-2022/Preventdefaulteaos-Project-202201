@@ -1,8 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
-
+import userEvent from "@testing-library/user-event";
 import PackOpenerContainer from "./PackOpenerContainer";
+import Button from "../Button/Button";
 
 describe("Given a PackOpenerContainer component", () => {
   describe("When it is render", () => {
@@ -11,7 +12,7 @@ describe("Given a PackOpenerContainer component", () => {
         <>
           <BoosterCardsContextProvider>
             <ResultsContextProvider>
-              <PackOpenerContainer />{" "}
+              <PackOpenerContainer />
             </ResultsContextProvider>
           </BoosterCardsContextProvider>
         </>
@@ -22,6 +23,20 @@ describe("Given a PackOpenerContainer component", () => {
       });
 
       expect(expectedButton).toBeInTheDocument();
+    });
+
+    test("xd", () => {
+      render(
+        <>
+          <BoosterCardsContextProvider>
+            <ResultsContextProvider>
+              <PackOpenerContainer />
+            </ResultsContextProvider>
+          </BoosterCardsContextProvider>
+        </>
+      );
+      const xdd = screen.getByRole("img");
+      expect(xdd).toBeInTheDocument();
     });
   });
 });
