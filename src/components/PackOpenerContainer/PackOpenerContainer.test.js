@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
-import userEvents from "@testing-library/user-event";
+import userEvent from "@testing-library/user-event";
 
 import PackOpenerContainer from "./PackOpenerContainer";
 
@@ -45,7 +45,7 @@ describe("Given a PackOpenerContainer component", () => {
         Text: /open a pack/i,
       });
 
-      userEvents.click(expectedButton);
+      userEvent.click(expectedButton);
 
       await waitFor(async () => {
         const promise = await screen.findAllByRole("img");
