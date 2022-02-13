@@ -22,6 +22,9 @@ const MyDeckList = () => {
     loadMyDeckCardsAPI();
   }, [loadMyDeckCardsAPI]);
 
+  const resultsCardsNotCreated = resultsCards.filter(
+    (card) => !card.hasOwnProperty("created")
+  );
   return (
     <>
       <HeaderContainer>
@@ -29,7 +32,7 @@ const MyDeckList = () => {
       </HeaderContainer>
 
       <CardListComponent>
-        {resultsCards.map((card) => (
+        {resultsCardsNotCreated.map((card) => (
           <MyDeckCard key={card.id} card={card} />
         ))}
       </CardListComponent>
