@@ -234,4 +234,33 @@ describe("Given a resultsCardsReducer component", () => {
       expect(newArrayOfCards).toEqual(expectedArrayofCards);
     });
   });
+  describe("When it is instantiated with and incorrect action", () => {
+    test("Then it should render that same card as the currentState", () => {
+      const expectedArrayofCards = [
+        {
+          id: 1,
+          name: "Overtaker",
+          imageUrl:
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=97051&type=card",
+        },
+        {
+          id: 2,
+          name: "Heart-Piercer Bow",
+          imageUrl:
+            "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386551&type=card",
+        },
+      ];
+
+      const action = {
+        type: "error",
+      };
+
+      const expectedErrorCard = resultsCardsReducer(
+        expectedArrayofCards,
+        action
+      );
+
+      expect(expectedErrorCard).toEqual(expectedArrayofCards);
+    });
+  });
 });
