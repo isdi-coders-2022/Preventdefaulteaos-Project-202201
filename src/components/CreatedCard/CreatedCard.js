@@ -8,6 +8,7 @@ import {
   CreatedCardComponentRed,
   CreatedCardComponentWhite,
 } from "../../jsStyles/CreatedCard";
+import { Link } from "react-router-dom";
 
 const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
   const { deleteCardAPI } = useMagicApi();
@@ -31,8 +32,9 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
-            <Button className="edit" type="onCard" text="EDIT" />
-
+            <Link to={`/editcreatedcard/${id}`}>
+              <Button className="edit" type="onCard" text="EDIT" />
+            </Link>
             <Button
               type="onCard"
               text="DELETE"
@@ -53,8 +55,9 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
-            <Button className="edit" type="onCard" text="EDIT" />
-
+            <Link to={`/editcreatedcard/${id}`}>
+              <Button className="edit" type="onCard" text="EDIT" />
+            </Link>
             <Button
               type="onCard"
               text="DELETE"
@@ -75,7 +78,9 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
-            <Button className="edit" type="onCard" text="EDIT" />
+            <Link to={`/editcreatedcard/${id}`}>
+              <Button className="edit" type="onCard" text="EDIT" />
+            </Link>{" "}
             <Button
               type="onCard"
               text="DELETE"
@@ -96,8 +101,9 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
-            <Button className="edit" type="onCard" text="EDIT" />
-
+            <Link to={`/editcreatedcard/${id}`}>
+              <Button className="edit" type="onCard" text="EDIT" />
+            </Link>
             <Button
               type="onCard"
               text="DELETE"
@@ -118,8 +124,9 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">Type: {types}</p>
             <p className="card--text">Text: {text}</p>
-            <Button className="edit" type="onCard" text="EDIT" />
-
+            <Link to={`/editcreatedcard/${id}`}>
+              <Button className="edit" type="onCard" text="EDIT" />
+            </Link>
             <Button
               type="onCard"
               text="DELETE"
