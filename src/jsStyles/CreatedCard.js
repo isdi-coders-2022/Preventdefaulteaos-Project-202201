@@ -32,8 +32,15 @@ export const CreatedCardComponent = styled.div`
   }
   & button {
     position: absolute;
-    top: 250px;
-    left: 70px;
+    top: 260px;
+    left: 110px;
+    width: 80px;
+  }
+
+  & .edit {
+    position: absolute;
+    top: 260px;
+    left: 10px;
   }
 `;
 export const CreatedCardComponentRed = styled(CreatedCardComponent)`
