@@ -21,11 +21,6 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const BlankDiv = styled.div`
-  height: 40px;
-  width: 20px;
-`;
-
 const CreatedCardList = () => {
   const { resultsCards } = useContext(ResultsContext);
   const { loadMyDeckCardsAPI } = useMagicApi();
