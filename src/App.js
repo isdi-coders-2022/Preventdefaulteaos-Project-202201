@@ -7,6 +7,7 @@ import ResultsPage from "./pages/ResultsPage";
 import MyDeck from "./pages/MyDeck";
 import CreateCardPage from "./pages/CreateCardPage";
 import MoreInfoPage from "./pages/MoreInfoPage";
+import EditCreatedCardPage from "./pages/EditCreatedCardPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/results" element={<ResultsPage />} />
         <Route path="/mydeck" element={<MyDeck />} />
         <Route path="/createcard" element={<CreateCardPage />} />
+        <Route path="/editcreatedcard/:id" element={<EditCreatedCardPage />} />
         <Route path="*" element={<NotFoundPage />} />
         <Route path="/moreinfo" element={<MoreInfoPage />} />
       </Routes>
