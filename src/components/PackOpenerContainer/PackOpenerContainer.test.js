@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react";
 import BoosterCardsContextProvider from "../../store/contexts/BoosterCardsContextProvider";
 import ResultsContextProvider from "../../store/contexts/ResultsContextProvider";
 import PackOpenerContainer from "./PackOpenerContainer";
-import Button from "../Button/Button";
 
 describe("Given a PackOpenerContainer component", () => {
   describe("When it is render", () => {
