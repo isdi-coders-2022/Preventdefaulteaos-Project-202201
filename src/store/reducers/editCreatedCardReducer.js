@@ -7,7 +7,7 @@ const editCreatedCardReducer = (currentCreatedCard, action) => {
       cardToEdit = action.card;
       break;
     default:
-      cardToEdit = [...currentCreatedCard];
+      cardToEdit = currentCreatedCard;
   }
 
   return cardToEdit;
