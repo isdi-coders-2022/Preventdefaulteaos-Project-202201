@@ -8,10 +8,12 @@ import {
 } from "../store/actions/ResultsCards/actionCreators";
 import BoosterCardsContext from "../store/contexts/BoosterCardsContext";
 import ResultsContext from "../store/contexts/ResultsContext";
+import { editCreatedCardAction } from "../store/actions/EditCard/actionCreator";
 
 const useMagicApi = () => {
   const { dispatch } = useContext(BoosterCardsContext);
   const { dispatch: dispatchResults } = useContext(ResultsContext);
+  const { dispatchEditCard } = useContext(ResultsContext);
 
   const apiGetBoosterPackURL = process.env.REACT_APP_URLAPI;
 
@@ -30,6 +32,35 @@ const useMagicApi = () => {
     const resultsCards = await response.json();
     dispatchResults(loadResultsCardsAction(resultsCards));
   }, [apiGetResultsCardsURL, dispatchResults]);
+
+  const loadCreatedCardToEditAPI = useCallback(
+    async (id) => {
+      const response = await fetch(
+        `https://magic-world-api.herokuapp.com/magicWorld/${id}`
+      );
+      const card = await response.json();
+
+      dispatchEditCard(editCreatedCardAction(card));
+    },
+    [dispatchEditCard]
+  );
+  const editCreatedCardAPI = async (card) => {
+    const response = await fetch(
+      `https://magic-world-api.herokuapp.com/magicWorld/${card.id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(card),
+      }
+    );
+    if (response.ok) {
+      dispatchEditCard(editCreatedCardAction(card));
+    } else {
+      throw new Error();
+    }
+  };
 
   const addCardsAPI = async (card) => {
     const cardHTTP = {
@@ -69,6 +100,8 @@ const useMagicApi = () => {
     addCardsAPI,
     deleteCardAPI,
     loadMyDeckCardsAPI,
+    loadCreatedCardToEditAPI,
+    editCreatedCardAPI,
   };
 };
 

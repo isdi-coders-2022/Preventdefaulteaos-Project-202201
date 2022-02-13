@@ -1,6 +1,5 @@
-import Button from "../Button/Button";
 // import PropTypes from "prop-types";
-import useMagicApi from "../../hooks/useMagicApi";
+
 import {
   CreatedCardComponentBlack,
   CreatedCardComponentBlue,
@@ -8,20 +7,14 @@ import {
   CreatedCardComponentRed,
   CreatedCardComponentWhite,
 } from "../../jsStyles/CreatedCard";
-import { Link } from "react-router-dom";
 
-const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
-  const { deleteCardAPI } = useMagicApi();
-
+const CardToEdit = ({ card: { imageUrl, name, types, color, text, id } }) => {
   const cardColor = color ? color.toLowerCase() : null;
-  const deleteCreatedCard = () => {
-    deleteCardAPI(id);
-  };
 
   return (
     <>
       {cardColor === "red" && (
-        <CreatedCardComponentRed className="red">
+        <CreatedCardComponentRed>
           <img
             src={imageUrl}
             alt={`${name} card`}
@@ -32,14 +25,6 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">{types}</p>
             <p className="card--text">{text}</p>
-            <Link to={`/editcreatedcard/${id}`}>
-              <Button className="edit" type="onCard" text="EDIT" />
-            </Link>
-            <Button
-              type="onCard"
-              text="DELETE"
-              actionOnClick={deleteCreatedCard}
-            />
           </section>
         </CreatedCardComponentRed>
       )}
@@ -55,14 +40,6 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">{types}</p>
             <p className="card--text">{text}</p>
-            <Link to={`/editcreatedcard/${id}`}>
-              <Button className="edit" type="onCard" text="EDIT" />
-            </Link>
-            <Button
-              type="onCard"
-              text="DELETE"
-              actionOnClick={deleteCreatedCard}
-            />
           </section>
         </CreatedCardComponentBlue>
       )}
@@ -78,14 +55,6 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">{types}</p>
             <p className="card--text">{text}</p>
-            <Link to={`/editcreatedcard/${id}`}>
-              <Button className="edit" type="onCard" text="EDIT" />
-            </Link>{" "}
-            <Button
-              type="onCard"
-              text="DELETE"
-              actionOnClick={deleteCreatedCard}
-            />
           </section>
         </CreatedCardComponentBlack>
       )}
@@ -101,14 +70,6 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">{types}</p>
             <p className="card--text">{text}</p>
-            <Link to={`/editcreatedcard/${id}`}>
-              <Button className="edit" type="onCard" text="EDIT" />
-            </Link>
-            <Button
-              type="onCard"
-              text="DELETE"
-              actionOnClick={deleteCreatedCard}
-            />
           </section>
         </CreatedCardComponentGreen>
       )}
@@ -124,14 +85,6 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
             <h3 className="card--name">{name}</h3>
             <p className="card--type">{types}</p>
             <p className="card--text">{text}</p>
-            <Link to={`/editcreatedcard/${id}`}>
-              <Button className="edit" type="onCard" text="EDIT" />
-            </Link>
-            <Button
-              type="onCard"
-              text="DELETE"
-              actionOnClick={deleteCreatedCard}
-            />
           </section>
         </CreatedCardComponentWhite>
       )}
@@ -147,4 +100,4 @@ const CreatedCard = ({ card: { imageUrl, name, types, color, text, id } }) => {
 
 //   }),
 
-export default CreatedCard;
+export default CardToEdit;
